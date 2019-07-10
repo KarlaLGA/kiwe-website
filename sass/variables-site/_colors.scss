@@ -34,13 +34,9 @@ $accent:rgba(246, 167, 27, 1); //active icons, number border, waiting time backg
 
 //BUTTOMS
 $bt-color : rgb(255, 255, 255); //white
-background color: $main-green //Dark green
+$but-background-color: $main-green; //Dark green
 
 //section names
-Font color $main-green //Dark green
+$section-font-color: $main-green //Dark green
 
-//waiting time box
-background: $accent //Orange
 
-//witing time text
-$wt-fc: rgb(255, 255, 255);; //font color white
