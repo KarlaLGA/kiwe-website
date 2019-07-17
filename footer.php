@@ -14,6 +14,28 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer">
+
+		<nav id="site-navigation" class="footer-navigation">
+			<button class="menu-toggle" aria-controls="footer-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'kiwe' ); ?></button>
+			<?php
+			wp_nav_menu( array(
+				'theme_location' => 'menu-footer',
+				'menu_id'        => 'footer-menu',
+			) );
+			?>
+		</nav><!-- #site-navigation -->
+
+		<nav id="site-navigation" class="social-navigation">
+			<button class="menu-toggle" aria-controls="social-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'kiwe' ); ?></button>
+			<?php
+			wp_nav_menu( array(
+				'theme_location' => 'menu-social',
+				'menu_id'        => 'social-menu',
+			) );
+			?>
+		</nav><!-- #site-navigation -->
+
+
 		<div class="site-info">
 			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'kiwe' ) ); ?>">
 				<?php

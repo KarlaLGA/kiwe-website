@@ -48,8 +48,18 @@
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'kiwe' ); ?></button>
 			<?php
 			wp_nav_menu( array(
-				'theme_location' => 'menu-1',
+				'theme_location' => 'menu-main',
 				'menu_id'        => 'primary-menu',
+			) );
+			?>
+		</nav><!-- #site-navigation -->
+
+		<nav id="site-navigation" class="subheader-navigation">
+			<button class="menu-toggle" aria-controls="subheader-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'kiwe' ); ?></button>
+			<?php
+			wp_nav_menu( array(
+				'theme_location' => 'menu-subheader',
+				'menu_id'        => 'subheader-menu',
 			) );
 			?>
 		</nav><!-- #site-navigation -->
