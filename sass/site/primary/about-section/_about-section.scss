@@ -1,0 +1,73 @@
+.ugb-container__content-wrapper{
+
+}
+
+#menu-secondary-menu-user li:nth-child(2){
+    display: none;
+}
+
+@media screen and (min-width: 700px){
+    #menu-secondary-menu-user li:nth-child(2){
+        display: inline-block;
+    }
+
+    #menu-secondary-menu-user li:nth-child(3){
+        display: none;
+    }
+}
+
+.secondary-user-nav{
+    list-style-type: none;
+    padding: 1%;
+    margin: 1rem 1% 1rem 1%;
+    background-color: $mid-green;
+    border-radius: 10px;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+
+    a:link, a:visited{
+        color: black;
+        text-decoration: none;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: bold;
+        font-size: 18px;
+               
+    }
+}
+
+.user-about-kiwe, .user-how-kiwe, .restaurant-about-kiwe{
+    background-color: #fff !important;
+    border-radius: 10px;
+    text-align-last: left;
+    padding: 2%;
+    margin: 1rem 1% 1rem 1%;
+
+    h2{
+        font-family: 'Source Serif Pro', serif;
+        font-size: 37px;
+        color: $accent;
+        font-weight: bold;
+        span{
+            font-family: Lobster, serif ;
+            font-weight: bold;
+            font-size: 88px;
+            color:$main-green;
+
+        }
+    }
+
+    p, li{
+        font-family: $font-section-text, sans-serif ;
+        font-weight: normal;
+        font-size: 18px;
+        color:black;
+    }
+
+    ul{
+        margin: 1rem 1% 1rem 1%;
+        
+    }
+}
