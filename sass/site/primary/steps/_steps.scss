@@ -1,0 +1,75 @@
+.how-to-desktop{
+    display: none;
+}
+
+.how-to-mobile,
+.how-to-desktop,
+.how-to{
+    background-color: $mid-green !important;
+    border-radius: 10px;
+    text-align: left;
+    padding: 2%;
+    margin: 1rem 1% 1rem 1%;
+
+    h2{
+        font-family: 'Source Serif Pro', serif;
+        font-size: 37px;
+        color: $brown;
+        font-weight: bold;
+        span{
+            font-family: Lobster, serif ;
+            font-weight: bold;
+            font-size: 37px;
+            color:$main-green;
+
+        }
+    }
+    p{
+        font-family:$font-how-steps;
+        font-weight: 700;
+        font-size: 18px;
+        color:black;
+    }
+}
+
+.how-to{
+    padding: 0;
+    margin: 0;
+}
+// Might need a new container to flex the video and text.
+// .ugb-container__wrapper{
+//     display: flex;
+// }
+
+
+.how-to-desktop{
+    ol{
+        margin-left: 0;
+        max-width: 50%;
+        
+            li{
+            font-family:$font-how-steps;
+            font-weight: 700;
+            font-size: 18px;
+            color:black;
+        }
+    }
+}
+
+.how-to-video{
+    max-width: 50%;
+    max-height: auto;
+}
+
+@media screen and (min-width: 1000px){
+    .how-to-desktop{
+        display: block;
+    }
+
+    .how-to-mobile{
+        display: none;
+    }
+    .how-to-video{
+        max-width: 50%;
+    }
+}
