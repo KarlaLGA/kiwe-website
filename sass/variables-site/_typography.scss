@@ -8,6 +8,39 @@ $font__line-height-pre: 1.6;
 
 //Kiwe typography - Done by Luis//
 
+// Header
+$font-main-menu: "open Sans" (18pts) semibold;
+
+//Tag
+$font-tag: "open Sans" (18pts) bold;
+
+//Donwload/Register section
+$font-call-text: "open Sans"  (20pts) regular;
+$font-call-action: "Source Serif" (30pts) semibold;
+
+//Slogan
+$font-slogan: "Lobster" (88pts) regular;
+
+//Second header
+$font-second-header: "open Sans" (16pts) semibold;
+
+
+//Sections
+    //Header Section
+        $font-section-header: "Source Serif" (37pts) bold;
+    
+    // Header Section Text
+        $font-section-text: "Open Sans" (18pts) regular;
+
+    //F&Q Questions
+        $font-questions: "Source Serif" (24pts) semibold;
+ 
+
+//Footer
+$font-footer:"Open Sans" (14pts) regular;
+$font-footer-copyright: "Open Sans" (14pts) light;
+
+
 //BUTTOMS
 $bt-font-family : 'Open Sans';
 $bt-font-weight : bold;
