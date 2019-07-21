@@ -38,7 +38,7 @@
     }
 }
 
-.user-about-kiwe, .user-how-kiwe, .restaurant-about-kiwe{
+.user-about-kiwe, .user-how-kiwe, .restaurant-about-kiwe, .restaurant-how-kiwe{
     background-color: #fff !important;
     border-radius: 10px;
     text-align-last: left;
@@ -68,6 +68,57 @@
 
     ul{
         margin: 1rem 1% 1rem 1%;
+        //list-style-image: url('asset/kiwi-bullet.png');
+        list-style-type: none;
+        padding: 0;
+
+        li{
+            line-height: 1.5;
+            margin: 0.5rem auto;
+        }
+
+        li::before{
+            content: "";
+            display: block;
+            background: url("asset/kiwi-bullet.png") no-repeat;
+            width: 20px;
+            height: 20px;
+            float: left;
+            margin: 0 6px 0 0;
+            
+
+        }
+   
         
     }
+}
+
+.business-plan-kiwe{
+    background-color: #fff !important;
+    border-radius: 10px;
+    text-align-last: left;
+    padding: 2%;
+    margin: 1rem 1% 1rem 1%;
+
+    h2{
+        font-family: 'Source Serif Pro', serif;
+        font-size: 37px;
+        color: $accent;
+        font-weight: bold;
+        span{
+            font-family: Lobster, serif ;
+            font-weight: bold;
+            font-size: 88px;
+            color:$main-green;
+
+        }
+    }
+
+    table{
+        font-family: $font-section-text, sans-serif ;
+        font-weight: normal;
+        font-size: 18px;
+        color:black;
+    }
+
 }
