@@ -25,17 +25,11 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'kiwe' ); ?></a>
 
 	<header id="masthead" class="site-header">
-		<div class="header-primary">
 		<div class="site-branding">
-
-
 			<?php
+			the_custom_logo();
 			if ( is_front_page() && is_home() ) :
 				?>
-
-
-
-
 				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 				<?php
 			else :
@@ -44,15 +38,10 @@
 				<?php
 			endif;
 			
-			?>
-
-<div class="logo">
-
-			<?php
-			the_custom_logo();
-			?>
-			</div>
-
+			if ( $kiwe_description || is_customize_preview() ) :
+				?>
+				<p class="site-description"><?php echo $kiwe_description; /* WPCS: xss ok. */ ?></p>
+			<?php endif; ?>
 		</div><!-- .site-branding -->
 
 		<nav id="site-navigation" class="main-navigation">
@@ -64,9 +53,6 @@
 			) );
 			?>
 		</nav><!-- #site-navigation -->
-		</div>
-
-<div class="header-secondary">
 
 		<nav id="site-navigation" class="subheader-navigation">
 			<button class="menu-toggle" aria-controls="subheader-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'kiwe' ); ?></button>
@@ -77,10 +63,6 @@
 			) );
 			?>
 		</nav><!-- #site-navigation -->
-		</div>
-
-
-
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
