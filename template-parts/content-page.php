@@ -17,6 +17,10 @@
 	<?php kiwe_post_thumbnail(); ?>
 
 	<div class="entry-content">
+
+	<?php if(is_page("about") ) : ?>
+
+
 		<?php
 		the_content();
 
@@ -25,6 +29,20 @@
 			'after'  => '</div>',
 		) );
 		?>
+
+	<?php else : ?>
+
+	<?php
+		the_content();
+
+		wp_link_pages( array(
+			'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'kiwe' ),
+			'after'  => '</div>',
+		) );
+		?>
+
+
+		<?php endif; ?>
 	</div><!-- .entry-content -->
 
 	<?php if ( get_edit_post_link() ) : ?>

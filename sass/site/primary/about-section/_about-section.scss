@@ -1,0 +1,267 @@
+.page-id-18 .tagline{
+    background-color:$brown !important;
+    border-radius: 10px;
+    text-align: center;
+    padding: 2%;
+    margin: 1rem 1% 1rem 1%;
+
+    box-shadow: none !important;
+
+    color: white;
+
+    font-family: 'Lobster', serif;
+    font-size: 37px;
+    letter-spacing: 1px;
+}
+
+.page-id-2 .tagline{
+    background-color:$brown !important;
+    border-radius: 10px;
+    text-align: center;
+    padding: 2%;
+    margin: 1rem 1% 1rem 1%;
+
+    box-shadow: none !important;
+
+    color: white;
+
+    font-family: 'Lobster', serif;
+    font-size: 37px;
+    letter-spacing: 1px;
+}
+
+
+#menu-secondary-menu-user li:nth-child(2), #menu-secondary-menu-restaurant li:nth-child(2){
+    display: none;
+}
+
+@media screen and (min-width: 700px){
+    #menu-secondary-menu-user li:nth-child(2){
+        display: inline-block;
+    }
+
+    #menu-secondary-menu-restaurant li:nth-child(2){
+        display: inline-block;
+    }
+
+    #menu-secondary-menu-user li:nth-child(3){
+        display: none;
+    }
+
+    #menu-secondary-menu-restaurant li:nth-child(3)   {
+        display: none;
+    } 
+}
+
+.secondary-user-nav{
+    list-style-type: none;
+    padding: 1%;
+    margin: 1rem 1% 1rem 1%;
+    background-color: $mid-green;
+    border-radius: 10px;
+    box-sizing: border-box;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+
+    a:link, a:visited{
+        color: black;
+        text-decoration: none;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: bold;
+        font-size: 18px;
+               
+    }
+}
+
+.user-about-container{
+    background-color: $main-green !important;
+    border: none !important;
+    box-shadow: none !important;
+    margin: 1rem 1% 1rem 1%;
+    padding: 0;
+    background-color: hotpink;
+
+    @media screen and (min-width: 700px){
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.restaurant-about-section{
+    background-color: $main-green !important;
+    border: none !important;
+    box-shadow: none !important;
+    margin: 1rem 1% 1rem 1%;
+    padding: 0;
+    
+    @media screen and (min-width: 700px){
+        .ugb-container__wrapper{
+            .ugb-container__content-wrapper{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-gap: 1%;
+            }
+      
+        }
+    }
+}
+
+@media screen and (min-width: 700px){
+.restaurant-about-kiwe .ugb-container__wrapper .ugb-container__content-wrapper,
+.restaurant-how-kiwe .ugb-container__wrapper .ugb-container__content-wrapper 
+{
+    display: block;
+    min-height: 350px;
+}
+
+.ugb-container .ugb-container__content-wrapper>:last-child{
+    margin-bottom: 1rem !important;
+}
+}
+
+.user-about-kiwe, .user-how-kiwe, .restaurant-about-kiwe, .restaurant-how-kiwe{
+    background-color: #fff !important;
+    border-radius: 10px;
+    text-align: left;
+    padding: 2%;
+    margin: 1rem 0 1rem 0;
+    @media screen and (min-width: 700px){
+        min-height: 350px;
+    margin-bottom: 0 !important;
+    }
+    
+
+    h2{
+        font-family: 'Source Serif Pro', serif;
+        font-size: 37px;
+        color: $accent;
+        font-weight: bold;
+        line-height: 1;
+        span{
+            font-family: Lobster, serif ;
+            font-weight: bold;
+            font-size: 37px;
+            color:$main-green;
+            text-transform: lowercase;
+        }
+    }
+
+    p, li{
+        font-family: $font-section-text, sans-serif ;
+        font-weight: normal;
+        font-size: 1rem;
+        color:black;
+        margin-bottom: 1rem !important;
+    }
+
+    ul{
+        margin: 1rem 1% 1rem 1%;
+        list-style-image: url('asset/kiwi-bullet.png');
+        list-style-type: none;
+        padding-left: 20px;
+
+        @media screen and (min-width: 700px){
+            padding-left: 20px;
+        }
+
+        li{
+            line-height: 1.5;
+            margin: 0.5rem auto;
+        }
+
+        /*li::before{
+            content: "";
+            display: block;
+            background: url("asset/kiwi-bullet.png") no-repeat;
+            width: 20px;
+            height: 20px;
+            float: left;
+            margin: 0 6px 0 0;
+            
+
+        }*/
+   
+        
+    }
+}
+
+.business-plan-kiwe{
+    background-color: #fff !important;
+    border-radius: 10px;
+    text-align: left;
+    padding: 2%;
+    margin: 1rem 1% 1rem 1%;
+
+    h2{
+        font-family: 'Source Serif Pro', serif;
+        font-size: 37px;
+        color: $accent;
+        font-weight: bold;
+        span{
+            font-family: Lobster, serif ;
+            font-weight: bold;
+            font-size: 37px;
+            color:$main-green;
+            text-transform: lowercase;
+        }
+    }
+
+    table,p{
+        font-family: $font-section-text, sans-serif ;
+        font-weight: normal;
+        font-size: 18px;
+        color:black;
+        line-height: 1.5;
+
+        @media screen and (min-width: 1000px){
+            font-size: 24px;
+        }
+
+        tbody{
+
+            tr{
+                padding: 1%;
+            }
+
+            td{
+                padding: 2%;
+            }
+
+            tr:nth-of-type(even){
+                background-color: $mid-green;
+            }
+
+            tr:nth-of-type(odd){
+                background-color: $second-green;
+            }
+
+            tr:nth-child(1){
+
+                td:nth-child(2){
+                    color: $accent;
+                    font-family: 'Source Serif Pro',serif;
+                    font-weight: bold;
+                    font-size: 20px;
+                    @media screen and (min-width: 1000px){
+                        font-size: 28px;
+                    }
+                }
+                td:nth-child(3){
+                    color: $main-green;
+                    font-family: 'Source Serif Pro',serif;
+                    font-weight: bold;
+                    font-size: 20px;
+                    @media screen and (min-width: 1000px){
+                        font-size: 28px;
+                    }
+                }
+            }
+        }
+    }
+
+}

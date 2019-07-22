@@ -8,24 +8,60 @@ $font__line-height-pre: 1.6;
 
 //Kiwe typography - Done by Luis//
 
+// Header
+$font-main-menu: "open Sans"; // (18px) semibold;
+
+//Tag
+$font-tag: "open Sans" ;// (18px) bold;
+
+//Donwload/Register section
+$font-call-text: "open Sans" ; // (20px) regular;
+$font-call-action: "Source Serif"; //(30px) semibold;
+
+//Slogan
+$font-slogan: "Lobster"; // (88px) regular;
+
+//Second header
+$font-second-header: "open Sans";// (16px) semibold;
+
+
+//Sections
+    //Header Section
+        $font-section-header: "Source Serif";// (37px) bold;
+    
+    // Header Section Text
+        $font-section-text: "Open Sans";// (18px) regular;
+
+    //F&Q Questions
+        $font-how-steps: "Source Serif";// (24px) semibold;
+    
+        //F&Q Questions
+        $font-questions: "Source Serif";// (24px) semibold;
+ 
+
+//Footer
+$font-footer:"Open Sans";// (14px) regular;
+$font-footer-copyright: "Open Sans";// (14px) light;
+
+
 //BUTTOMS
-$bt-font-family : Open Sans;
+$bt-font-family : 'Open Sans';
 $bt-font-weight : bold;
 $bt-font-size : 18px;
 
 
 //section names
-$sc-font-family : Source Serif Pro;//font family
+$sc-font-family : 'Source Serif Pro';//font family
 $sc-font-size : 18px;//font size
 $sc-text-transform : uppercase; //text transform
 
 
 //witing time text
-    $wtb-ff: Myriad Pro; //font family
+    $wtb-ff: 'Myriad Pro'; //font family
     $wtb-fs: 20px; //font size
     $wt-lh: 15px; //line height
 
     //witing time text HOVER IMAGE
-        $wtb-ff: Myriad Pro; //font family
+        $wtb-ff: 'Myriad Pro'; //font family
         $wtb-fs: 13px; //font size
         $wt-lh: 10px; //line height
