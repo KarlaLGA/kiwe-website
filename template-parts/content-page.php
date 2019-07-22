@@ -17,6 +17,10 @@
 	<?php kiwe_post_thumbnail(); ?>
 
 	<div class="entry-content">
+
+	<?php if(is_page("about") ) : ?>
+
+
 		<?php
 		the_content();
 
@@ -25,6 +29,8 @@
 			'after'  => '</div>',
 		) );
 		?>
+
+		<?php endif; ?>
 	</div><!-- .entry-content -->
 
 	<?php if ( get_edit_post_link() ) : ?>

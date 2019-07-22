@@ -1,0 +1,47 @@
+.site-about {
+
+    .wp-block-ugb-container {
+        background-color: transparent !important;
+        border: none !important;
+    }
+
+    .entry-title {
+        font-family: $sc-font-family;
+        font-weight: bold;
+        font-size: 2.5rem;
+        color: white;
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    p {
+        color: white;
+        text-align: center;
+        font-family: $font-main-menu;
+    }
+
+    .team-member-name,
+    .team-member-role {
+        color: black;
+    }
+
+    .team-member-picture {
+        background-image: url("asset/kiwe-bg.png"); 
+        background-position: 89.1px 177.8px;
+        background-repeat: no-repeat;
+
+
+        img {
+            clip-path: url(#staff);
+            width: 500px;
+
+
+
+        }
+    }
+
+
+    svg:not(:root) {
+        overflow: hidden;
+    }
+}
