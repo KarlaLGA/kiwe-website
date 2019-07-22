@@ -10,12 +10,12 @@
     color: white;
 
     font-family: 'Lobster', serif;
-    font-size: 37px;
+    font-size: 2rem;
     letter-spacing: 1px;
 }
 
 .page-id-2 .tagline{
-    background-color:$brown !important;
+    background-color:$main-green !important;
     border-radius: 10px;
     text-align: center;
     padding: 2%;
@@ -26,7 +26,7 @@
     color: white;
 
     font-family: 'Lobster', serif;
-    font-size: 37px;
+    font-size: 2rem;
     letter-spacing: 1px;
 }
 
@@ -99,7 +99,7 @@
     margin: 1rem 1% 1rem 1%;
     padding: 0;
     
-    @media screen and (min-width: 700px){
+    @media screen and (min-width: 1000px){
         .ugb-container__wrapper{
             .ugb-container__content-wrapper{
                 display: grid;
@@ -111,12 +111,12 @@
     }
 }
 
-@media screen and (min-width: 700px){
+@media screen and (min-width: 1000px){
 .restaurant-about-kiwe .ugb-container__wrapper .ugb-container__content-wrapper,
 .restaurant-how-kiwe .ugb-container__wrapper .ugb-container__content-wrapper 
 {
     display: block;
-    min-height: 350px;
+    min-height: 200px;
 }
 
 /////////////////////////////////////////////////////////////////////
@@ -132,8 +132,8 @@
     text-align: left;
     padding: 2%;
     margin: 1rem 0 1rem 0;
-    @media screen and (min-width: 700px){
-        min-height: 350px;
+    @media screen and (min-width: 1000px){
+        min-height: 200px;
     margin-bottom: 0 !important;
     }
     
@@ -218,11 +218,11 @@
         font-weight: normal;
         font-size: 1rem;
         color:black;
-        line-height: 1.5;
+        line-height: 1;
         
 
         @media screen and (min-width: 1000px){
-            font-size: 24px;
+            font-size: 1.2rem;
         }
 
         tbody{
@@ -233,7 +233,7 @@
             }
 
             td{
-                padding: 2%;
+                padding: 1%;
                 border-radius: 10px;
             }
 
