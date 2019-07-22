@@ -339,3 +339,11 @@ template {
 [hidden] {
 	display: none;
 }
+
+/*.ugb-container .ugb-container__content-wrapper>*{
+    margin-bottom: 0 !important;
+}*/
+
+*{
+    box-sizing: border-box;
+}
