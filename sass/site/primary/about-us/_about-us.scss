@@ -26,18 +26,21 @@
     }
 
     .team-member-picture {
-        background-image: url("asset/kiwe-bg.png"); 
-        background-position: 89.1px 177.8px;
+        background-image: url("asset/mask.png"); 
+        background-position: 20px 1.2px;
         background-repeat: no-repeat;
+        background-size: 91%;
+        margin-bottom: 0 !important;
 
 
         img {
             clip-path: url(#staff);
-            width: 500px;
-
-
-
+            // width: 500px;
         }
+    }
+
+    #staff:not(svg) {
+        transform-origin: -700px -700px;
     }
 
 
