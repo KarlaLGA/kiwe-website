@@ -119,10 +119,12 @@
     min-height: 350px;
 }
 
+/////////////////////////////////////////////////////////////////////
 .ugb-container .ugb-container__content-wrapper>:last-child{
     margin-bottom: 1rem !important;
 }
 }
+/////////////////////////////////////////////////////////////////////
 
 .user-about-kiwe, .user-how-kiwe, .restaurant-about-kiwe, .restaurant-how-kiwe{
     background-color: #fff !important;
@@ -214,9 +216,10 @@
     table,p{
         font-family: $font-section-text, sans-serif ;
         font-weight: normal;
-        font-size: 18px;
+        font-size: 1rem;
         color:black;
         line-height: 1.5;
+        
 
         @media screen and (min-width: 1000px){
             font-size: 24px;
@@ -226,10 +229,12 @@
 
             tr{
                 padding: 1%;
+                
             }
 
             td{
                 padding: 2%;
+                border-radius: 10px;
             }
 
             tr:nth-of-type(even){
@@ -251,7 +256,7 @@
                         font-size: 28px;
                     }
                 }
-                td:nth-child(3){
+                td:nth-child(3), td:nth-child(1){
                     color: $main-green;
                     font-family: 'Source Serif Pro',serif;
                     font-weight: bold;
