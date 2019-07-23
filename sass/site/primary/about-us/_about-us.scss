@@ -3,6 +3,7 @@
     .wp-block-ugb-container {
         background-color: transparent !important;
         border: none !important;
+        box-shadow: none;
     }
 
     .entry-title {
@@ -31,7 +32,8 @@
         background-repeat: no-repeat;
         background-size: 91%;
         margin-bottom: 0 !important;
-
+        width: 600px;
+        margin: auto;
 
         img {
             clip-path: url(#staff);
