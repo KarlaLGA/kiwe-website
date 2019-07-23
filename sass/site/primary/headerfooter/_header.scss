@@ -1,0 +1,84 @@
+.header-primary {
+
+    background-color: rgb(107, 197, 107);
+    display:flex;
+    // align-items: flex-start;
+    justify-content: space-between;
+
+
+
+}
+
+
+
+.header-primary ul {
+
+    
+    display:flex;
+    // align-items: flex-start;
+    justify-content: space-around;
+    width: 50vw;
+
+
+}
+
+
+
+
+.header-secondary {
+
+    background-color: rgb(185, 202, 185);
+    display:flex;
+    // align-items: flex-start;
+    justify-content: space-around;
+
+
+
+}
+
+.header-secondary ul {
+
+   list-style: none;
+   display:flex;
+    // align-items: flex-start;
+    justify-content: space-around;
+    width: 50vw;
+
+
+
+}
+
+
+.header-secondary li {
+
+    float: left;
+
+
+
+}
+
+
+.logo {
+
+    max-width: 50px;
+    max-height: 50px;
+}
+
+
+.site-branding {
+
+
+display:flex;
+justify-content: space-around;
+width:13vw;
+
+
+.site-title {
+
+font-size: 16px;
+
+}
+
+}
+
+
