@@ -1,67 +1,56 @@
+
+
 .header-primary {
 
-    background-color: rgb(107, 197, 107);
     display:flex;
-    // align-items: flex-start;
     justify-content: space-between;
 
-
-
-}
-
-
-
-.header-primary ul {
+ul {
 
     
     display:flex;
-    // align-items: flex-start;
+    
     justify-content: space-around;
-    width: 50vw;
+    width: 70vw;
+    margin-top: 27px;
 
+a {
 
-}
-
-
-
-
-.header-secondary {
-
-    background-color: rgb(185, 202, 185);
-    display:flex;
-    // align-items: flex-start;
-    justify-content: space-around;
-
-
-
-}
-
-.header-secondary ul {
-
-   list-style: none;
-   display:flex;
-    // align-items: flex-start;
-    justify-content: space-around;
-    width: 50vw;
-
-
+color:black;
 
 }
 
 
-.header-secondary li {
+a:hover {
 
-    float: left;
+    color:$main-green;
+    
+    }
 
 
+li:nth-child(4) 
+{
+    padding: 2px 10px;
+    background-color: $main-green;
+    border-radius: 5px;
+    color: $white;
+
+    a {
+color: $white;
+
+    }
+}
 
 }
 
+}
 
-.logo {
+.logo a {
 
-    max-width: 50px;
-    max-height: 50px;
+    width: 40px;
+    height: 40px;
+    margin-top: 19px;
+    
 }
 
 
@@ -69,16 +58,154 @@
 
 
 display:flex;
-justify-content: space-around;
-width:13vw;
+justify-content: center;
+width:25vw;
+margin-left: 3%;
 
 
-.site-title {
+.site-title a {
 
-font-size: 16px;
+font-size: 26px;
+color:$main-green;
+font-family: Lobster, serif;
+padding-right: 10px;
 
 }
 
 }
+
+.header-secondary {
+
+  background-color: $main-green;
+   text-align: center;
+
+   ul {
+list-style: none;
+
+margin:0;
+padding:0;
+
+a {
+color: $brown;
+
+}
+
+}
+
+}
+
+
+
+
+@media screen and (min-width:762px) {
+
+
+.header-primary {
+
+    display:flex;
+    justify-content: space-between;
+
+ul {
+
+    
+    display:flex;
+    
+    justify-content: space-around;
+    width: 65vw;
+    margin-top: 48px;
+
+li:nth-child(4) 
+{
+    padding: 2px 10px;
+    
+}
+
+}
+
+}
+
+
+
+.logo img {
+
+top:20px;
+left:20px;
+
+}
+
+.logo a {
+
+    width: 50px;
+    height: 50px;
+    margin-top: 42px;
+    animation: logoRight 2s;
+}
+
+
+.site-branding {
+
+
+display:flex;
+justify-content: center;
+
+
+
+
+.site-title a {
+
+font-size: 56px;
+padding-right: 10px;
+
+}
+
+
+
+}
+
+.header-secondary {
+
+  
+    display:flex;
+    justify-content: space-around;
+    
+ul {
+
+   list-style: none;
+   display:flex;
+   flex-wrap: wrap;
+    justify-content: space-around;
+    width: 50vw;
+    margin: 20px 0 20px 0;
+
+li {
+
+    float: left;
+}
+
+}
+
+}
+
+}
+
+
+@keyframes logoRight {
+    0% {
+    transform: translateX(-300px);
+    }
+
+    50% {
+    transform: translateX(50px) rotate(180deg);
+    }
+
+    100% {
+    transform: translateX(0) rotate(-360deg);
+    }
+}
+
+
+
+
+
 
 
