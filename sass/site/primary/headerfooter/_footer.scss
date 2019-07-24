@@ -38,10 +38,6 @@ a:hover {
 	
 	}
 	
-	
-	
-	
-	
 	a[href*="facebook"]{
 	&::before {
 		font-family: "Font Awesome 5 Brands"; content: "\f39e";
@@ -88,10 +84,6 @@ a[href*="instagram"]{
 }
 
 
-
-
-
-
 @media screen and (min-width:762px)
 
 {
@@ -119,10 +111,6 @@ justify-content: space-between;
 }
 
 
-
-
-
-
 .footer-secondary {
 
 	display: flex;
@@ -139,29 +127,12 @@ justify-content: space-between;
 	
 	}
 
-a[href*="facebook"]{
-	&::before {
-		font-family: "Font Awesome 5 Brands"; content: "\f39e";
-	
-	}
-}
 
-a[href*="twitter"]{
-	&::before {
-		font-family: "Font Awesome 5 Brands"; content: "\f099";
-	}
-}
-
-a[href*="instagram"]{
-	&::before {
-		font-family: "Font Awesome 5 Brands"; content: "\f16d";
-	}
-}
 
 	.social-navigation a {
 
 		font-size: 32px;
-		color: $main-green;
+	
 	}
 }
 
@@ -173,8 +144,6 @@ a[href*="instagram"]{
 text-align: center;
 
 }
-
-
 
 }
 
