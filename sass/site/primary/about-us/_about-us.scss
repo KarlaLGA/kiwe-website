@@ -20,28 +20,39 @@
         font-family: $font-main-menu;
     }
 
+    .team-members-container ul {
+        list-style-type: none;
+        margin-left: 0;
+        padding-left: 0;
+    }    
+
     .team-member-name,
     .team-member-role {
         color: black;
     }
 
-    .team-member-picture {
+    // #staff {
+    //     transform: scale(0.71) translate(-63px -123px);
+    // }
+
+    .team-member-picture-container {
         background-image: url("asset/mask.png"); 
         background-position: 20px 1.2px;
         background-repeat: no-repeat;
-        background-size: 91%;
+        background-size: 300px;
+        background-position: 1px 4px;
         margin-bottom: 0 !important;
 
 
         img {
             clip-path: url(#staff);
-            width: 600px;
+            width: 300px;
             margin: auto;
         }
     }
 
-    #staff:not(svg) {
-        transform-origin: -700px -700px;
+    path.cls-2 {
+    transform: translate(-63px -123px) scale(0.71);   
     }
 
 
