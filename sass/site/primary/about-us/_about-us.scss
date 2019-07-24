@@ -31,23 +31,54 @@
         color: black;
     }
 
+    .team-member-name {
+        position: relative;  
+        // // width: 300px;
+        top: 30px;
+        left: 5px;
+        // // // left: 0;
+        // // // text-align: left;
+        //transform: rotate(-45deg);  
+    }
+
+    .team-member-role {
+        position: relative;
+        top: -18px;
+        left: 5px;
+    }
+
+    .team-member-name-container {
+        position: relative;
+    }
+
+    .team-member {
+        text-align: center;
+        width: 350px;
+        margin: auto;
+    }
+
     // #staff {
     //     transform: scale(0.71) translate(-63px -123px);
     // }
 
     .team-member-picture-container {
-        background-image: url("asset/mask.png"); 
-        background-position: 20px 1.2px;
-        background-repeat: no-repeat;
-        background-size: 300px;
-        background-position: 1px 4px;
-        margin-bottom: 0 !important;
+        text-align: center;
 
+        .background-container{
+            background-image: url("asset/mask.png"); 
+            background-position: 20px 1.2px;
+            background-repeat: no-repeat;
+            background-size: 300px;
+            background-position: 25.5px 4.5px;
+            margin-bottom: 0 !important;
+            width: auto;
+            height: auto;
 
-        img {
-            clip-path: url(#staff);
-            width: 300px;
-            margin: auto;
+            .team-member-picture {
+                clip-path: url(#staff);
+                width: 300px;
+                margin: auto;
+            }
         }
     }
 

@@ -42,24 +42,39 @@ get_header();
 			
 			// The Loop
 			if ( $the_query->have_posts() ) {
+				$i = 0;
 				while ( $the_query->have_posts() ) {
 					$the_query->the_post();
 					?>
 					<div class="single-team-member">
 					<div class="team-member">
-					<?php the_title( '<h2 class="team-member-name">', '</h2>' ); ?>
+						<?php
+							$i++;
+							?>
+							<div class="team-member-name-container">
+								<h2 class="team-member-name" id="member-<?php echo $i ?>-name"><?php the_title() ?></>
+							</div>
+							
+						<?php
+						
+						?>
 					<div class="team-member-picture-container">
-					<?php the_post_thumbnail( 'medium', array( 'class' => 'team-member-picture' ) ); ?>
+						<div class="background-container">
+							<?php the_post_thumbnail( 'medium', array( 'class' => 'team-member-picture' ) ); ?>
+
+						</div>
+						<!-- <img src="./asset/mask.png" alt=""> -->
 					</div>
-					<h4 class="team-member-role"><?php the_field('position'); ?></h4>
+					
+					<h4 class="team-member-role" id="member-<?php echo $i ?>-position"><?php the_field('position'); ?></h4>
 					</div>
 				
 					<?php
 				}
-				echo '</ul>';
 			} else {
 				// no posts found
 			}
+			
 			/* Restore original Post Data */
 			wp_reset_postdata();
 
