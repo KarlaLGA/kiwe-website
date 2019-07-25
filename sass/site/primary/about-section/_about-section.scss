@@ -12,6 +12,7 @@
     font-family: 'Lobster', serif;
     font-size: 2rem;
     letter-spacing: 1px;
+    line-height: 1;
 }
 
 .page-id-2 .tagline{
@@ -28,6 +29,7 @@
     font-family: 'Lobster', serif;
     font-size: 2rem;
     letter-spacing: 1px;
+    line-height: 1;
 }
 
 
@@ -84,12 +86,18 @@
     box-shadow: none !important;
     margin: 1rem 1% 1rem 1%;
     padding: 0;
-    background-color: hotpink;
-
+    
     @media screen and (min-width: 700px){
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        .ugb-container__wrapper{
+            .ugb-container__content-wrapper{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-gap: 1%;
+            }
+      
+        }
     }
+    
 }
 
 .restaurant-about-section{
@@ -99,7 +107,7 @@
     margin: 1rem 1% 1rem 1%;
     padding: 0;
     
-    @media screen and (min-width: 1000px){
+    @media screen and (min-width: 700px){
         .ugb-container__wrapper{
             .ugb-container__content-wrapper{
                 display: grid;
@@ -111,9 +119,9 @@
     }
 }
 
-@media screen and (min-width: 1000px){
+@media screen and (min-width: 700px){
 .restaurant-about-kiwe .ugb-container__wrapper .ugb-container__content-wrapper,
-.restaurant-how-kiwe .ugb-container__wrapper .ugb-container__content-wrapper 
+.restaurant-how-kiwe .ugb-container__wrapper .ugb-container__content-wrapper
 {
     display: block;
     min-height: 200px;
@@ -123,6 +131,13 @@
 .ugb-container .ugb-container__content-wrapper>:last-child{
     margin-bottom: 1rem !important;
 }
+/////////////////////////////////////////////////////////////////////
+.user-about-kiwe .ugb-container__wrapper .ugb-container__content-wrapper,
+.user-how-kiwe .ugb-container__wrapper .ugb-container__content-wrapper
+{
+    display: block;
+}
+
 }
 /////////////////////////////////////////////////////////////////////
 
@@ -133,7 +148,7 @@
     padding: 2%;
     margin: 1rem 0 1rem 0;
     @media screen and (min-width: 1000px){
-        min-height: 200px;
+    min-height: 200px;
     margin-bottom: 0 !important;
     }
     
@@ -165,6 +180,7 @@
         margin: 1rem 1% 1rem 1%;
         list-style-image: url('asset/kiwi-bullet.png');
         list-style-type: none;
+        list-style-position: outside;
         padding-left: 20px;
 
         @media screen and (min-width: 700px){
