@@ -1,95 +1,147 @@
 .site-about {
 
-    background-color: #B3D474;
-    border-radius: 10px;
+    background-color: $mid-green;
+    border-radius: 20px;
+    padding-top: 1rem;
 
-    .wp-block-ugb-container {
-        background-color: transparent !important;
-        border: none !important;
-    }
-
-    .entry-title {
-        font-family: $sc-font-family;
-        font-weight: bold;
-        font-size: 2.5rem;
-        color: white;
-        text-align: center;
-        margin-top: 1rem;
-    }
-
-    p {
-        color: white;
-        text-align: center;
-        font-family: $font-main-menu;
-    }
-
-    .team-members-container ul {
-        list-style-type: none;
-        margin-left: 0;
-        padding-left: 0;
-    }    
-
-    .team-member-name,
-    .team-member-role {
+    .site-description {
         color: black;
-    }
-
-    .team-member-name {
-        position: relative;  
-        top: 30px;
-        left: 5px;
-        // // // left: 0;
-        // // // text-align: left;
-        //transform: rotate(-45deg);  
-    }
-
-    .team-member-role {
-        position: relative;
-        top: -18px;
-        left: 5px;
-    }
-
-    .team-member-name-container {
-        position: relative;
-    }
-
-    .team-member {
+        font-family: $sc-font-family;
+        margin: 0;
+        font-size: 1.2rem;
         text-align: center;
-        width: 350px;
+    }
+
+    .team-logo {
+        width: 180px;
         margin: auto;
-    }
+        margin-top: 0.5rem;
 
-    // #staff {
-    //     transform: scale(0.71) translate(-63px -123px);
-    // }
+        img {
+            text-align: center;
 
-    .team-member-picture-container {
-        text-align: center;
+        }
 
-        .background-container{
-            background-image: url("asset/mask.png"); 
-            background-position: 20px 1.2px;
-            background-repeat: no-repeat;
-            background-size: 322px;
-            background-position: 26.5px 4.5px;
-            margin-bottom: 0 !important;
-            width: auto;
-            height: auto;
-
-            .team-member-picture {
-                clip-path: url(#staff);
-                width: 300px;
-                margin: auto;
-            }
+        @media screen and (min-width:760px){
+            width: 150px;
         }
     }
 
-    path.cls-2 {
-    transform: translate(-63px -123px) scale(0.71);   
-    }
+    .about-us-content {
+        background-color: $main-green;
+        border-radius: 20px;
+
+        h1 {
+            margin: 0;
+            color: white;
+            font-family: $sc-font-family;
+            text-align: center;
+        }
+        
+
+        .wp-block-ugb-container {
+            background-color: transparent !important;
+            border: none !important;
+        }
+
+        .entry-title {
+            font-family: $sc-font-family;
+            font-weight: bold;
+            font-size: 2.5rem;
+            color: white;
+            text-align: center;
+            margin-top: 1rem;
+        }
+
+        p {
+            color: white;
+            text-align: center;
+            font-family: $font-main-menu;
+        }
+
+        .team-members-container ul {
+            list-style-type: none;
+            margin-left: 0;
+            padding-left: 0;
+        }
+        
+        .team-members-container {
+            @media screen and (min-width:760px){
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr 1fr;
+            }
+
+            @media screen and (min-width:1000px) {
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+            }
+        }
+
+        .team-member-name,
+        .team-member-role {
+            color: black;
+        }
+
+        .team-member-name {
+            position: relative;  
+            top: 30px;
+            left: -8px;
+            margin-top: 0;
+            // // // left: 0;
+            // // // text-align: left;
+            //transform: rotate(-45deg);  
+        }
+
+        #member-5-name {
+            left: -6px;
+        }
+
+        .team-member-role {
+            position: relative;
+            top: -38px;
+            left: -6px;
+            margin-top: 0;
+        }
+
+        .team-member {
+            text-align: center;
+            width: 320px;
+            margin: auto;
+        }
+
+        // #staff {
+        //     transform: scale(0.71) translate(-63px -123px);
+        // }
+
+        .team-member-picture-container {
+            text-align: center;
+
+            .background-container{
+                background-image: url("asset/mask.png"); 
+                background-position: 20px 1.2px;
+                background-repeat: no-repeat;
+                background-size: 300px;
+                background-position: 9.5px 4.5px;
+                margin-bottom: 0 !important;
+                width: auto;
+                height: auto;
+
+                .team-member-picture {
+                    clip-path: url(#staff);
+                    width: 100%;
+                    margin: auto;
+                }
+            }
+        }
+
+        path.cls-2 {
+        transform: translate(-63px -123px) scale(0.65);   
+        }
 
 
-    svg:not(:root) {
-        overflow: hidden;
+        svg:not(:root) {
+            overflow: hidden;
+        }
     }
 }

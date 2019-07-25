@@ -71,18 +71,22 @@
 		</nav><!-- #site-navigation -->
 		</div>
 
-<div class="header-secondary">
+		<?php if(is_home() || is_front_page() || is_page('rhome') ) :?>
 
-		<nav id="site-navigation" class="subheader-navigation">
-			<!-- <button class="menu-toggle" aria-controls="subheader-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'kiwe' ); ?></button> -->
-			<?php
-			wp_nav_menu( array(
-				'theme_location' => 'menu-subheader',
-				'menu_id'        => 'subheader-menu',
-			) );
-			?>
-		</nav><!-- #site-navigation -->
-		</div>
+			<div class="header-secondary">
+
+				<nav id="site-navigation" class="subheader-navigation">
+					<!-- <button class="menu-toggle" aria-controls="subheader-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'kiwe' ); ?></button> -->
+					<?php
+						wp_nav_menu( array(
+							'theme_location' => 'menu-subheader',
+							'menu_id'        => 'subheader-menu',
+						) );
+					?>
+					</nav><!-- #site-navigation -->
+			</div>
+
+		<?php endif; ?>
 
 
 
