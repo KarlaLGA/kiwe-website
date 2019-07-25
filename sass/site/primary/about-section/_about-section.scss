@@ -119,7 +119,7 @@
     }
 }
 
-@media screen and (min-width: 1000px){
+@media screen and (min-width: 700px){
 .restaurant-about-kiwe .ugb-container__wrapper .ugb-container__content-wrapper,
 .restaurant-how-kiwe .ugb-container__wrapper .ugb-container__content-wrapper
 {
@@ -180,6 +180,7 @@
         margin: 1rem 1% 1rem 1%;
         list-style-image: url('asset/kiwi-bullet.png');
         list-style-type: none;
+        list-style-position: outside;
         padding-left: 20px;
 
         @media screen and (min-width: 700px){
