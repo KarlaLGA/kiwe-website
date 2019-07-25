@@ -88,4 +88,17 @@
 
 	</header><!-- #masthead -->
 
-	<div id="content" class="site-content">
+	<?php if (is_home() || is_front_page()) : ?>
+
+		<div id="content" class="user-content">
+	
+	<?php elseif (is_page('rhome') ) : ?>
+
+		<div id="content" class="restaurant-content">
+	
+	<?php else : ?>
+
+		<div id="content" class="site-content">
+
+	<?php endif; ?>
+

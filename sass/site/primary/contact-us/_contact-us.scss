@@ -1,78 +1,86 @@
-.site-contact {
-    background-color: white;
-    margin: 4rem 2.5%;
+.contact-main {
+    background-color: $main-green;
     border-radius: 20px;
-    padding: 2rem 5%;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
 
-    .entry-title {
-        font-family: $sc-font-family;
-        font-weight: bold;
-        font-size: 2.5rem;
-        color: $accent;
-        text-align: center;
-        margin-top: 1rem;
-    }
+    .site-contact {
+        background-color: white;
+        margin: 0 2.5%;
+        border-radius: 20px;
+        padding: 2rem 5%;
 
-    .entry-content {
-        margin-top: 0;
-    }
-
-    .contact-us,
-    .wp-block-ugb-container {
-        background-color: white !important;
-        box-shadow: none;
-        margin-top: 0 !important;
-        margin-bottom: 0 !important;
-        padding: 0;
-    }
-
-    .nf-form-cont {
-        margin-bottom: 0 !important;
-    }
-
-    p,
-    .nf-form-fields-required {
-        display: none;
-    }
-
-    .nf-field-label {
-        text-align: center;
-        font-family: $sc-font-family;
-    }
-
-    .nf-field-element {
-        input,
-        select,
-        textarea {
-            border-radius: 10px !important;
-            background-color: $second-green !important;
-            border: none !important;
-
-        }
-
-        #nf-field-4 {
-            background-color: $main-green !important;
-            font-family: $bt-font-family;
-            font-weight: $bt-font-weight;
+        .entry-title {
+            font-family: $sc-font-family;
+            font-weight: bold;
+            font-size: 2.5rem;
+            color: $accent;
             text-align: center;
-            padding: 0.5rem 10% !important;
-            margin: auto 35%;
-            width: 30%;
-
+            margin-top: 1rem;
         }
+
+        .entry-content {
+            margin-top: 0;
+        }
+
+        .contact-us,
+        .wp-block-ugb-container {
+            background-color: white !important;
+            box-shadow: none;
+            margin-top: 0 !important;
+            margin-bottom: 0 !important;
+            padding: 0;
+        }
+
+        .nf-form-cont {
+            margin-bottom: 0 !important;
+        }
+
+        p,
+        .nf-form-fields-required {
+            display: none;
+        }
+
+        .nf-field-label {
+            text-align: center;
+            font-family: $sc-font-family;
+        }
+
+        .nf-field-element {
+            input,
+            select,
+            textarea {
+                border-radius: 10px !important;
+                background-color: $second-green !important;
+                border: none !important;
+
+            }
+
+            #nf-field-4 {
+                background-color: $main-green !important;
+                font-family: $bt-font-family;
+                font-weight: $bt-font-weight;
+                text-align: center;
+                padding: 0.5rem 10% !important;
+                margin: auto 35%;
+                width: 30%;
+
+            }
+        }
+
+        .contact-us-image {
+            display: none;
+        }
+
+        .entry-footer {
+            display: none;
+        }
+
+
+
+        
     }
 
-    .contact-us-image {
-        display: none;
-    }
-
-    .entry-footer {
-        display: none;
-    }
-
-
-
-    
 }
 
 

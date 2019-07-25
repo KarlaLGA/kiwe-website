@@ -19,6 +19,26 @@ get_header();
 
 		
 		<main id="main" class="site-main site-about">
+
+
+		
+
+
+		<p class="site-description"> <?php the_field('team_description'); ?> </p>
+
+		<div class="team-logo">
+
+		<?php
+		$logo = get_field('team_logo');
+		$size = 'medium';
+
+		// echo $logo;
+
+		if ($logo) {
+			echo wp_get_attachment_image($logo, $size);
+		}
+			?>
+		</div>
 			
 		<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" 
 		height="0" width="0" >
@@ -30,6 +50,9 @@ get_header();
 			</defs>
 			<rect class="cls-1" width="612" height="792"/>
 		</svg>
+		<div class="about-us-content">
+		<h1> <?php the_title(); ?> </h1>
+
 		<section class="team-members-container">
 		<?php
  
@@ -82,6 +105,7 @@ get_header();
 			?>
 		
 		</section>
+		</div>
 		</main><!-- #main -->
 
 

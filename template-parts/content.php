@@ -31,6 +31,36 @@
 
 	<?php kiwe_post_thumbnail(); ?>
 
+	<?php 
+	
+	if(is_front_page() ) :
+
+		?>
+
+		<div class="home-content">
+		<?php
+		the_content( sprintf(
+			wp_kses(
+				/* translators: %s: Name of current post. Only visible to screen readers */
+				__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'kiwe' ),
+				array(
+					'span' => array(
+						'class' => array(),
+					),
+				)
+			),
+			get_the_title()
+		) );
+
+		wp_link_pages( array(
+			'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'kiwe' ),
+			'after'  => '</div>',
+		) );
+		?>
+	</div><!-- .entry-content -->
+	
+	<?php else : ?>
+
 	<div class="entry-content">
 		<?php
 		the_content( sprintf(
@@ -52,6 +82,8 @@
 		) );
 		?>
 	</div><!-- .entry-content -->
+
+	<?php endif;?>
 
 	<footer class="entry-footer">
 		<?php kiwe_entry_footer(); ?>
