@@ -2,6 +2,7 @@
     overflow-x: hidden;
 }
 
+
 .download-customer .ugb-container__content-wrapper {
     display: flex;
     justify-content: flex-start;
@@ -42,7 +43,8 @@
 
 .download-header{
     position: relative;
-   
+    height: fit-content;
+    padding-bottom: 0%;
 
     // .img-background-kiwe-icon{
     //     position: absolute;
@@ -62,6 +64,7 @@
     width: 100%;
     transform: scale(1.6);
     height: auto;
+    padding-top: 3%;
     }
 }
 
@@ -99,4 +102,19 @@
     z-index: 1;
 }
 }
-} //end of media query 600px
+} //end of media query 1000px
+
+@media screen and (min-width: 1300px){
+.download-header{
+    padding-bottom: 0%;
+}
+
+.img-background-header img{
+    transform: scale(1.4);
+    padding-top: 0;
+}
+
+.img-mobile-icon img{
+    transform: scale(1.2);
+}
+}
