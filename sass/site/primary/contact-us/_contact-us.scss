@@ -1,16 +1,20 @@
-.contact-main {
+
+
+// STYLING DONE BY KARLA LOPEZ 
+
+.contact-main { /* (0, 0, 1, 0) */
     background-color: $main-green;
     border-radius: 20px;
     padding-top: 4rem;
     padding-bottom: 4rem;
 
-    .site-contact {
+    .site-contact { /* (0, 0, 1, 0) */
         background-color: white;
         margin: 0 2.5%;
         border-radius: 20px;
         padding: 2rem 5%;
 
-        .entry-title {
+        .entry-title { /* (0, 0, 1, 0) */
             font-family: $sc-font-family;
             font-weight: bold;
             font-size: 2.5rem;
@@ -19,12 +23,12 @@
             margin-top: 1rem;
         }
 
-        .entry-content {
+        .entry-content { /* (0, 0, 1, 0) */
             margin-top: 0;
         }
 
         .contact-us,
-        .wp-block-ugb-container {
+        .wp-block-ugb-container { /* (0, 0, 2, 0) */
             background-color: white !important;
             box-shadow: none;
             margin-top: 0 !important;
@@ -32,31 +36,31 @@
             padding: 0;
         }
 
-        .nf-form-cont {
+        .nf-form-cont { /* (0, 0, 1, 0) */
             margin-bottom: 0 !important;
         }
 
-        p,
-        .nf-form-fields-required {
+        p, 
+        .nf-form-fields-required { /* (0, 0, 1, 1) */
             display: none;
         }
 
-        .nf-field-label {
+        .nf-field-label { /* (0, 0, 1, 0) */
             text-align: center;
             font-family: $sc-font-family;
         }
 
-        .nf-field-element {
+        .nf-field-element {/* (0, 0, 1, 0) */ 
+
             input,
             select,
-            textarea {
+            textarea { /* (0, 0, 0, 3) */
                 border-radius: 10px !important;
                 background-color: $second-green !important;
                 border: none !important;
-
             }
 
-            #nf-field-4 {
+            #nf-field-4 { /* (0, 1, 0, 0) */
                 background-color: $main-green !important;
                 font-family: $bt-font-family;
                 font-weight: $bt-font-weight;
@@ -64,21 +68,16 @@
                 padding: 0.5rem 10% !important;
                 margin: auto 35%;
                 width: 30%;
-
             }
         }
 
-        .contact-us-image {
+        .contact-us-image { /* (0, 0, 1, 0) */
             display: none;
         }
 
-        .entry-footer {
+        .entry-footer { /* (0, 0, 1, 0) */
             display: none;
-        }
-
-
-
-        
+        }   
     }
 
 }
