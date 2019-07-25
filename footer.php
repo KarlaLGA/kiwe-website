@@ -15,6 +15,8 @@
 
 	<footer id="colophon" class="site-footer">
 
+	<div class="footer-primary">
+
 		<nav id="site-navigation" class="footer-navigation">
 			<!-- <button class="menu-toggle" aria-controls="footer-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'kiwe' ); ?></button> -->
 			<?php
@@ -25,15 +27,29 @@
 			?>
 		</nav><!-- #site-navigation -->
 
+
+		<div class="footer-secondary">
+
 		<nav id="site-navigation" class="social-navigation">
 			<!-- <button class="menu-toggle" aria-controls="social-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'kiwe' ); ?></button> -->
 			<?php
 			wp_nav_menu( array(
 				'theme_location' => 'menu-social',
 				'menu_id'        => 'social-menu',
+
+				'container'      => 'nav',
+				'container_class'   => 'social-navigation',
+				'link_before' => '<span class="screen-reader-text">',
+				'link_after' => '</span>'
 			) );
 			?>
 		</nav><!-- #site-navigation -->
+
+		</div>
+
+
+
+		</div>
 
 
 		<div class="site-info">

@@ -1,4 +1,4 @@
-.page-id-18 .tagline{
+.page-id-18 .tagline{/*(0,0,2,0)*/
     background-color:$brown !important;
     border-radius: 10px;
     text-align: center;
@@ -12,9 +12,10 @@
     font-family: 'Lobster', serif;
     font-size: 2rem;
     letter-spacing: 1px;
+    line-height: 1;
 }
 
-.page-id-2 .tagline{
+.page-id-2 .tagline{/*(0,0,2,0)*/
     background-color:$main-green !important;
     border-radius: 10px;
     text-align: center;
@@ -28,32 +29,33 @@
     font-family: 'Lobster', serif;
     font-size: 2rem;
     letter-spacing: 1px;
+    line-height: 1;
 }
 
 
-#menu-secondary-menu-user li:nth-child(2), #menu-secondary-menu-restaurant li:nth-child(2){
+#menu-secondary-menu-user li:nth-child(2), #menu-secondary-menu-restaurant li:nth-child(2){/*(0,1,1,1),(0,1,1,1)*/
     display: none;
 }
 
 @media screen and (min-width: 700px){
-    #menu-secondary-menu-user li:nth-child(2){
+    #menu-secondary-menu-user li:nth-child(2){ /*(0,1,1,1)*/
         display: inline-block;
     }
 
-    #menu-secondary-menu-restaurant li:nth-child(2){
+    #menu-secondary-menu-restaurant li:nth-child(2){/*(0,1,1,1)*/
         display: inline-block;
     }
 
-    #menu-secondary-menu-user li:nth-child(3){
+    #menu-secondary-menu-user li:nth-child(3){/*(0,1,1,1)*/
         display: none;
     }
 
-    #menu-secondary-menu-restaurant li:nth-child(3)   {
+    #menu-secondary-menu-restaurant li:nth-child(3){/*(0,1,1,1)*/
         display: none;
     } 
 }
 
-.secondary-user-nav{
+.secondary-user-nav{/*(0,0,1,0)*/
     list-style-type: none;
     padding: 1%;
     margin: 1rem 1% 1rem 1%;
@@ -68,7 +70,7 @@
     justify-content: space-around;
     align-content: center;
 
-    a:link, a:visited{
+    a:link, a:visited{/*(0,0,1,1)*/ /*(0,0,1,1)*/
         color: black;
         text-decoration: none;
         font-family: 'Open Sans', sans-serif;
@@ -78,30 +80,50 @@
     }
 }
 
-.user-about-container{
+.user-about-container{/*(0,0,1,0)*/
     background-color: $main-green !important;
     border: none !important;
     box-shadow: none !important;
-    margin: 1rem 1% 1rem 1%;
+    margin: 1rem 1% 0rem 1%;
     padding: 0;
-    background-color: hotpink;
 
-    @media screen and (min-width: 700px){
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+    .ugb-container .ugb-container__content-wrapper>:last-child{/*(0,0,3,0)*/
+    margin-bottom: 1rem !important;
+    .ugb-container .ugb-container__content-wrapper>*{
+        margin: 1rem !important;
     }
 }
 
-.restaurant-about-section{
-    background-color: $main-green !important;
+    @media screen and (min-width: 700px){
+        .ugb-container__wrapper{/*(0,0,1,0)*/
+            .ugb-container__content-wrapper{/*(0,0,1,0)*/
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-gap: 1%;
+            }
+      
+        }
+    }
+    
+}
+
+.restaurant-about-section{/*(0,0,1,0)*/
+    background-color: $brown !important;
     border: none !important;
     box-shadow: none !important;
-    margin: 1rem 1% 1rem 1%;
+    margin: 1rem 1% 0rem 1%;
     padding: 0;
+
+    .ugb-container .ugb-container__content-wrapper>:last-child{/*(0,0,3,0)*/
+    margin-bottom: 1rem !important;
+    .ugb-container .ugb-container__content-wrapper>*{
+        margin: 1rem !important;
+    }
+}
     
-    @media screen and (min-width: 1000px){
-        .ugb-container__wrapper{
-            .ugb-container__content-wrapper{
+    @media screen and (min-width: 700px){
+        .ugb-container__wrapper{/*(0,0,1,0)*/
+            .ugb-container__content-wrapper{/*(0,0,1,0)*/
                 display: grid;
                 grid-template-columns: 1fr 1fr;
                 grid-gap: 1%;
@@ -111,40 +133,57 @@
     }
 }
 
-@media screen and (min-width: 1000px){
+@media screen and (min-width: 700px){
 .restaurant-about-kiwe .ugb-container__wrapper .ugb-container__content-wrapper,
-.restaurant-how-kiwe .ugb-container__wrapper .ugb-container__content-wrapper 
-{
+.restaurant-how-kiwe .ugb-container__wrapper .ugb-container__content-wrapper
+{/*(0,0,3,0)*/
     display: block;
     min-height: 200px;
+
+    *{
+        margin-bottom: 1rem !important;
+    }
 }
 
 /////////////////////////////////////////////////////////////////////
-.ugb-container .ugb-container__content-wrapper>:last-child{
-    margin-bottom: 1rem !important;
+.ugb-container .ugb-container__content-wrapper>*{/*(0,0,3,0)*/
+    margin-bottom: 0rem !important;
 }
+/////////////////////////////////////////////////////////////////////
+.user-about-kiwe .ugb-container__wrapper .ugb-container__content-wrapper,
+.user-how-kiwe .ugb-container__wrapper .ugb-container__content-wrapper,
+.business-plan-kiwe .ugb-container__wrapper .ugb-container__content-wrapper
+{/*(0,0,3,0)*//*(0,0,3,0)*/
+    display: block;
+
+    *{
+        margin-bottom: 1rem !important;
+    }
+}
+
 }
 /////////////////////////////////////////////////////////////////////
 
-.user-about-kiwe, .user-how-kiwe, .restaurant-about-kiwe, .restaurant-how-kiwe{
+.user-about-kiwe, .user-how-kiwe, .restaurant-about-kiwe, .restaurant-how-kiwe{/*(0,0,1,0)*//*(0,0,1,0)*//*(0,0,1,0)*//*(0,0,1,0)*/
     background-color: #fff !important;
     border-radius: 10px;
     text-align: left;
     padding: 2%;
     margin: 1rem 0 1rem 0;
+    margin-bottom: 0 !important;
     @media screen and (min-width: 1000px){
-        min-height: 200px;
+    min-height: 200px;
     margin-bottom: 0 !important;
     }
     
 
-    h2{
+    h2{/*(0,0,0,1)*/
         font-family: 'Source Serif Pro', serif;
         font-size: 37px;
         color: $accent;
         font-weight: bold;
         line-height: 1;
-        span{
+        span{/*(0,0,0,1)*/
             font-family: Lobster, serif ;
             font-weight: bold;
             font-size: 37px;
@@ -153,7 +192,7 @@
         }
     }
 
-    p, li{
+    p, li{/*(0,0,0,1)*//*(0,0,0,1)*/
         font-family: $font-section-text, sans-serif ;
         font-weight: normal;
         font-size: 1rem;
@@ -161,17 +200,18 @@
         margin-bottom: 1rem !important;
     }
 
-    ul{
+    ul{/*(0,0,0,1)*/
         margin: 1rem 1% 1rem 1%;
         list-style-image: url('asset/kiwi-bullet.png');
         list-style-type: none;
+        list-style-position: outside;
         padding-left: 20px;
 
         @media screen and (min-width: 700px){
             padding-left: 20px;
         }
 
-        li{
+        li{/*(0,0,0,1)*/
             line-height: 1.5;
             margin: 0.5rem auto;
         }
@@ -192,19 +232,19 @@
     }
 }
 
-.business-plan-kiwe{
+.business-plan-kiwe{/*(0,0,1,0)*/
     background-color: #fff !important;
     border-radius: 10px;
     text-align: left;
     padding: 2%;
     margin: 1rem 1% 1rem 1%;
 
-    h2{
+    h2{/*(0,0,0,1)*/
         font-family: 'Source Serif Pro', serif;
         font-size: 37px;
         color: $accent;
         font-weight: bold;
-        span{
+        span{/*(0,0,0,1)*/
             font-family: Lobster, serif ;
             font-weight: bold;
             font-size: 37px;
@@ -213,31 +253,35 @@
         }
     }
 
-    table,p{
+    table,p{/*(0,0,0,1)*//*(0,0,0,1)*/
         font-family: $font-section-text, sans-serif ;
         font-weight: normal;
         font-size: 1rem;
         color:black;
         line-height: 1;
+
+        td{
+            padding: 2%;
+        }
         
 
         @media screen and (min-width: 1000px){
             font-size: 1.2rem;
         }
 
-        tbody{
+        tbody{/*(0,0,0,1)*/
 
-            tr{
+            tr{/*(0,0,0,1)*/
                 padding: 1%;
                 
             }
 
-            td{
+            td{/*(0,0,0,1)*/
                 padding: 1%;
                 border-radius: 10px;
             }
 
-            tr:nth-of-type(even){
+            tr:nth-of-type(even){/*(0,0,1,1)*/
                 background-color: $mid-green;
             }
 
@@ -245,9 +289,9 @@
                 background-color: $second-green;
             }
 
-            tr:nth-child(1){
+            tr:nth-child(1){/*(0,0,1,1)*/
 
-                td:nth-child(2){
+                td:nth-child(2){/*(0,0,1,1)*/
                     color: $accent;
                     font-family: 'Source Serif Pro',serif;
                     font-weight: bold;
@@ -256,7 +300,7 @@
                         font-size: 28px;
                     }
                 }
-                td:nth-child(3), td:nth-child(1){
+                td:nth-child(3), td:nth-child(1){/*(0,0,1,1)*//*(0,0,1,1)*/
                     color: $main-green;
                     font-family: 'Source Serif Pro',serif;
                     font-weight: bold;
