@@ -47,26 +47,27 @@ get_header();
 					$the_query->the_post();
 					?>
 					<div class="single-team-member">
-					<div class="team-member">
-						<?php
-							$i++;
-							?>
-							<div class="team-member-name-container">
-								<h2 class="team-member-name" id="member-<?php echo $i ?>-name"><?php the_title() ?></>
-							</div>
+						<div class="team-member">
+							<?php
+								$i++;
+								?>
+								<div class="team-member-name-container">
+									<h2 class="team-member-name" id="member-<?php echo $i ?>-name"><?php the_title() ?></>
+								</div>
+								
+							<?php
 							
-						<?php
-						
-						?>
-					<div class="team-member-picture-container">
-						<div class="background-container">
-							<?php the_post_thumbnail( 'medium', array( 'class' => 'team-member-picture' ) ); ?>
+							?>
+							<div class="team-member-picture-container">
+								<div class="background-container">
+									<?php the_post_thumbnail( 'medium', array( 'class' => 'team-member-picture' ) ); ?>
 
+								</div>
+								<!-- <img src="./asset/mask.png" alt=""> -->
+							</div>
+						
+							<h4 class="team-member-role" id="member-<?php echo $i ?>-position"><?php the_field('position'); ?></h4>
 						</div>
-						<!-- <img src="./asset/mask.png" alt=""> -->
-					</div>
-					
-					<h4 class="team-member-role" id="member-<?php echo $i ?>-position"><?php the_field('position'); ?></h4>
 					</div>
 				
 					<?php
