@@ -1,10 +1,14 @@
-.site-about {
+
+
+// STYLING DONE BY KARLA LOPEZ 
+
+.site-about { /* (0, 0, 1, 0) */
 
     background-color: $mid-green;
     border-radius: 20px;
     padding-top: 1rem;
 
-    .site-description {
+    .site-description { /* (0, 0, 1, 0) */
         color: black;
         font-family: $sc-font-family;
         margin: 0;
@@ -12,14 +16,13 @@
         text-align: center;
     }
 
-    .team-logo {
+    .team-logo { /* (0, 0, 1, 0) */
         width: 180px;
         margin: auto;
         margin-top: 0.5rem;
 
-        img {
+        img { /* (0, 0, 0, 1) */
             text-align: center;
-
         }
 
         @media screen and (min-width:760px){
@@ -27,24 +30,23 @@
         }
     }
 
-    .about-us-content {
+    .about-us-content { /* (0, 0, 1, 0) */
         background-color: $main-green;
         border-radius: 20px;
 
-        h1 {
+        h1 { /* (0, 0, 0, 1) */
             margin: 0;
             color: white;
             font-family: $sc-font-family;
             text-align: center;
         }
         
-
-        .wp-block-ugb-container {
+        .wp-block-ugb-container { /* (0, 0, 1, 0) */
             background-color: transparent !important;
             border: none !important;
         }
 
-        .entry-title {
+        .entry-title { /* (0, 0, 1, 0) */
             font-family: $sc-font-family;
             font-weight: bold;
             font-size: 2.5rem;
@@ -53,19 +55,19 @@
             margin-top: 1rem;
         }
 
-        p {
+        p { /* (0, 0, 0, 1) */
             color: white;
             text-align: center;
             font-family: $font-main-menu;
         }
 
-        .team-members-container ul {
+        .team-members-container ul { /* (0, 0, 1, 1) */
             list-style-type: none;
             margin-left: 0;
             padding-left: 0;
         }
         
-        .team-members-container {
+        .team-members-container { /* (0, 0, 1, 0) */
             @media screen and (min-width:760px){
                 display: grid;
                 grid-template-columns: 1fr 1fr;
@@ -79,45 +81,38 @@
         }
 
         .team-member-name,
-        .team-member-role {
+        .team-member-role { /* (0, 0, 2, 0) */
             color: black;
         }
 
-        .team-member-name {
+        .team-member-name { /* (0, 0, 1, 0) */
             position: relative;  
             top: 30px;
             left: -8px;
             margin-top: 0;
-            // // // left: 0;
-            // // // text-align: left;
-            //transform: rotate(-45deg);  
         }
 
-        #member-5-name {
+        #member-5-name { /* (0, 0, 0, 1) */
             left: -6px;
         }
 
-        .team-member-role {
+        .team-member-role { /* (0, 0, 1, 0) */
             position: relative;
             top: -38px;
             left: -6px;
             margin-top: 0;
         }
 
-        .team-member {
+        .team-member { /* (0, 0, 1, 0) */
             text-align: center;
             width: 320px;
             margin: auto;
         }
 
-        // #staff {
-        //     transform: scale(0.71) translate(-63px -123px);
-        // }
-
-        .team-member-picture-container {
+        .team-member-picture-container { /* (0, 0, 1, 0) */
             text-align: center;
 
-            .background-container{
+            .background-container{ /* (0, 0, 1, 0) */
                 background-image: url("asset/mask.png"); 
                 background-position: 20px 1.2px;
                 background-repeat: no-repeat;
@@ -127,7 +122,7 @@
                 width: auto;
                 height: auto;
 
-                .team-member-picture {
+                .team-member-picture { /* (0, 0, 1, 0) */
                     clip-path: url(#staff);
                     width: 100%;
                     margin: auto;
@@ -135,12 +130,12 @@
             }
         }
 
-        path.cls-2 {
+        path.cls-2 { /* (0, 0, 1, 1) */
         transform: translate(-63px -123px) scale(0.65);   
         }
 
 
-        svg:not(:root) {
+        svg:not(:root) { /* (0, 0, 2, 1) */
             overflow: hidden;
         }
     }
