@@ -1,13 +1,20 @@
+.page{
+    overflow-x: hidden;
+}
+
 .download-customer .ugb-container__content-wrapper {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: flex-start;
+    //justify-content: space-around;
+    //align-items: center;
     position: relative;
+    padding-left: 1rem;
+
 }
 
 .download-customer,
 .download {
-    background-color: $brown !important;
+    //background-color: $brown !important;
     color: white;
     overflow: visible;
     border: none;
@@ -15,7 +22,7 @@
 }
 
 .download{
-    width: 40%;
+    width: 70%;
 
     .ugb-container__content-wrapper{
         display: block;
@@ -34,37 +41,62 @@
 }
 
 .download-header{
-    .img-background-kiwe-icon{
-        position: absolute;
-        right: -2vw;
-        top: 50%;
-        transform: scale(2.2) translateY(-25%);
-        z-index: 0;
-    }
+    position: relative;
+   
 
+    // .img-background-kiwe-icon{
+    //     position: absolute;
+    //     right: -2vw;
+    //     top: 50%;
+    //     transform: scale(2.2) translateY(-25%);
+    //     z-index: 0;
+    // }
+}
+
+.img-background-header {
+    position: absolute;
+    width: 100%;
+    img{
+    top: 0;
+    left: 0;
+    width: 100%;
+    transform: scale(1.6);
+    height: auto;
+    }
 }
 
 .download-footer{
-    .img-background-kiwe-icon{
-        position: absolute;
-        left: -7vw;
-        top: 50%;
-        transform: scale(2.2) translateY(-20%);
-        z-index: 0;
+    // .img-background-kiwe-icon{
+    //     position: absolute;
+    //     left: -7vw;
+    //     top: 50%;
+    //     transform: scale(2.2) translateY(-20%);
+    //     z-index: 0;
+    //}  
         
         .download{
             justify-content: center;
         }
-        
-    }
-
 }
 
 .img-mobile-icon{
-    width: 30%;
+    display: none;
+}
+
+@media screen and (min-width: 1000px){
+.download{
+        width: 40%;
+}
+
+.img-mobile-icon{
+    width: 25%;
+    display: block;
+    //right:30rem;
+    margin-left: 10vw;
  img{
     position: relative;
-    transform: scale(1.5);
+    transform: scale(1.4);
     z-index: 1;
 }
 }
+} //end of media query 600px
