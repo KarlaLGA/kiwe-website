@@ -1,8 +1,8 @@
 // Done by Luis
-.how-to-section,
-.how-to,
-.how-to-step,
-.how-to-one{
+.how-to-section, /* (0.0.1.0)*/
+.how-to,/* (0.0.1.0)*/
+.how-to-step,/* (0.0.1.0)*/
+.how-to-one{/* (0.0.1.0)*/
     background-color: $mid-green !important;
     border-radius: 10px;
     text-align: left;
@@ -11,14 +11,14 @@
     border: none !important;
     box-shadow: none !important;
 
-    h2{
+    h2{/* (0.0.0.1)*/
         font-family: 'Source Serif Pro', serif;
         font-size: 37px;
         color: $brown;
         font-weight: bold;
         line-height: 1;
 
-         span{
+         span{/* (0.0.0.1)*/
             font-family: Lobster, serif ;
             font-weight: bold;
             font-size: 37px;
@@ -26,7 +26,7 @@
 
         }
     }
-    .how-to-text{
+    .how-to-text{/* (0.0.1.0)*/
         font-family:$font-how-steps;
         font-size: 18px;
         color:black;
@@ -34,7 +34,7 @@
         margin-bottom: 0 !important;
     }
 
-    .how-to-p{
+    .how-to-p{/* (0.0.1.0)*/
        font-family: $font-steps;
        font-size: 16px;
        color:black;
@@ -44,34 +44,35 @@
 
 }
 
-.how-to-step{
+.how-to-step{/* (0.0.1.0)*/
     margin: 0;
     padding: 0;
 }
 
 
-.how-to .wp-block-embed__wrapper{
+.how-to .wp-block-embed__wrapper{/* (0.0.2.0)*/
     padding: 0;
     margin: 0;
 }
 
 
-.how-to-section{
+.how-to-section{/*(0.0.1.0)*/
     padding: 2%;
     margin: 1rem 1%; 
 }
 
+
 @media screen and (max-width: 800px){
-.how-to-video {
+.how-to-video {/* (0.0.1.0)*/
     position: relative;
-    padding-bottom: 56.25%; /* 16:9 */
-    padding-top: 25px;  /* for video controller */
+    padding-bottom: 56.25%;
+    padding-top: 25px;
     max-width: 700px;
     max-height: auto;
     margin: auto;
     text-align: center;
 }
-.how-to-video iframe {
+.how-to-video iframe {/*(0.0.1.1)*/
     position: absolute;
     top: 0;
     left: 0;
@@ -81,44 +82,44 @@
 }
 
 @media screen and (min-width: 801px){
-    .how-to .ugb-container__content-wrapper{
+    .how-to .ugb-container__content-wrapper{/*(0.0.2.0)*/
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 2%;
     }
 
-    .how-to-step .ugb-container__wrapper .ugb-container__content-wrapper{
+    .how-to-step .ugb-container__wrapper .ugb-container__content-wrapper{/*(0.0.3.0)*/
         height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
     }
 
-    .how-to-step .ugb-container__wrapper{
+    .how-to-step .ugb-container__wrapper{/*(0.0.2.0)*/
         height: 100%;
     }
 
-    figure{
+    figure{/* (0.0.0.1)*/
         display: flex;
         align-items: center;
         margin-bottom: 0!important;
     }
 
-    .how-to-p{
+    .how-to-p{/* (0.0.1.0)*/
         margin-bottom: 0!important;
         margin-block-end: 0!important;
 
     }
 }
 
-.user-faq{
+.user-faq,/* (0.0.1.0)*/
+.restaurant-faq{/* (0.0.1.0)*/
     background-color: $second-green !important;
     border-radius: 10px;
     padding: 2%;
     margin: 1rem 1%;
-    padding-bottom: 70px;
 
-    h2{
+    h2{/* (0.0.0.1)*/
         font-family: 'Source Serif Pro', serif;
         font-size: 37px;
         color: $main-green;
@@ -126,36 +127,40 @@
         line-height: 1;
     }
 
-    .ugb-accordion__heading{
+    .ugb-accordion__heading{/* (0.0.1.0)*/
         font-family: $font-questions;
         color: $brown;
         background-color: $mid-green;
+        height: 100%;
     }
 
-    .ugb-accordion__text{
+    .ugb-accordion__text{/* (0.0.1.0)*/
         font-family: $font-steps;
         color: black;
         padding: 0;
         margin: 0;
         margin-top:.5rem !important;
     }
-
 }
 
-@media screen and (min-width: 700px){
-    .user-faq .ugb-container__content-wrapper,
-    .restaurant-faq .ugb-container__content-wrapper{
+.user-faq .wp-block-ugb-accordion.ugb-accordion.question-accordeon,/* (0.0.4.0)*/
+.restaurant-faq .wp-block-ugb-accordion.ugb-accordion.question-accordeon{/* (0.0.4.0)*/
+    margin-bottom: 1rem!important;
+}
+
+@media screen and (min-width: 770px){
+    .user-faq .ugb-container__content-wrapper,/* (0.0.2.0)*/
+    .restaurant-faq .ugb-container__content-wrapper{/* (0.0.2.0)*/
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: reapeat(6, 1fr) 1fr;
         grid-gap: 2%;
         
-        h2{
+        h2{/* (0.0.0.1)*/
             grid-column: 1/3;
         }
     
     }
-    
 }
 
 
