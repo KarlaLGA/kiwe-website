@@ -260,11 +260,7 @@
         color:black;
         line-height: 1;
 
-        td{
-            padding: 2%;
-        }
-        
-
+    
         @media screen and (min-width: 1000px){
             font-size: 1.2rem;
         }
@@ -277,7 +273,7 @@
             }
 
             td{/*(0,0,0,1)*/
-                padding: 1%;
+                padding: 2%;
                 border-radius: 10px;
             }
 
