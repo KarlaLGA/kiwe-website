@@ -2,37 +2,42 @@
     display: none;
 }
 
-.header-primary {
+ .header-primary { // (0, 0, 1, 0)
 
     display:flex;
     justify-content: space-between;
     position: relative;
 
-ul {
+ul { // (0, 0, 0, 1)
 
 
-a {
+    display:flex;
+
+    justify-content: space-around;
+    width: 70vw;
+    margin-top: 27px;
+
+a { // (0, 0, 0, 1)
 
 color:black;
 
 }
 
 
-a:hover {
+a:hover { // (0, 0, 1, 1)
 
     color:$main-green;
 
     }
 
 
-li:nth-child(4)
-{
+li:nth-child(4) { // (0, 0, 1, 1)
     padding: 2px 10px;
     background-color: $main-green;
     border-radius: 5px;
     color: $white;
 
-    a {
+    a { // (0, 0, 0, 1)
 color: $white;
 
     }
@@ -42,7 +47,7 @@ color: $white;
 
 }
 
-.logo a {
+.logo a { // (0, 0, 1, 1)
 
     width: 40px;
     height: 40px;
@@ -51,7 +56,7 @@ color: $white;
 }
 
 
-.site-branding {
+.site-branding { // (0, 0, 1, 0)
 
 
 display:flex;
@@ -60,7 +65,7 @@ width:25vw;
 margin-left: 3%;
 
 
-.site-title a {
+.site-title a { // (0, 0, 1, 1)
 
 font-size: 26px;
 color:$main-green;
@@ -71,19 +76,19 @@ padding-right: 10px;
 
 }
 
-.header-secondary {
+.header-secondary { // (0, 0, 1, 0)
 
   background-color: $main-green;
    text-align: center;
 
-   ul {
+   ul { // (0, 0, 0, 1)
 list-style: none;
 
 margin:0;
 padding:0;
 
-a {
-color: $brown;
+a { // (0, 0, 0, 1)
+color: $white;
 
 }
 
@@ -97,12 +102,12 @@ color: $brown;
 @media screen and (min-width:762px) {
 
 
-.header-primary {
+.header-primary { // (0, 0, 1, 0)
 
     display:flex;
     justify-content: space-between;
 
-ul {
+ul { // (0, 0, 0, 1)
 
 
     display:flex;
@@ -111,8 +116,7 @@ ul {
     width: 65vw;
     margin-top: 48px;
 
-li:nth-child(4)
-{
+li:nth-child(4) { // (0, 0, 1, 1)
     padding: 2px 10px;
 
 }
@@ -123,14 +127,14 @@ li:nth-child(4)
 
 
 
-.logo img {
+.logo img { // (0, 0, 1, 1)
 
 top:20px;
 left:20px;
 
 }
 
-.logo a {
+.logo a { // (0, 0, 1, 1)
 
     width: 50px;
     height: 50px;
@@ -139,7 +143,7 @@ left:20px;
 }
 
 
-.site-branding {
+.site-branding { // (0, 0, 1, 0)
 
 
 display:flex;
@@ -148,24 +152,22 @@ justify-content: center;
 
 
 
-.site-title a {
+.site-title a { // (0, 0, 1, 1)
 
 font-size: 56px;
 padding-right: 10px;
 
 }
 
-
-
 }
 
-.header-secondary {
+.header-secondary { // (0, 0, 1, 0)
 
 
     display:flex;
     justify-content: space-around;
-
-ul {
+    
+ul { // (0, 0, 0, 1)
 
    list-style: none;
    display:flex;
@@ -174,7 +176,7 @@ ul {
     width: 50vw;
     margin: 20px 0 20px 0;
 
-li {
+li { // (0, 0, 0, 1)
 
     float: left;
 }

@@ -1,20 +1,20 @@
-.footer-primary {
+.footer-primary { // (0, 0, 1, 0)
 
 	text-align: center;
 
 
 
-ul {
+ul { // (0, 0, 0, 1)
 list-style: none;
 margin:0;
 padding:0;
 
-a {
+a { // (0, 0, 0, 1)
 color: black;
 
 }
 
-a:hover {
+a:hover { // (0, 0, 1, 1)
 	color: $main-green;
 	
 	}
@@ -25,11 +25,11 @@ a:hover {
 }
 
 
-.footer-secondary {
+.footer-secondary { // (0, 0, 1, 0)
 
 	
 	
-	.social-navigation ul {
+	.social-navigation ul { // (0, 0, 1, 1)
 	
 		display: flex;
 		justify-content: space-around;
@@ -57,7 +57,7 @@ a[href*="instagram"]{
 	}
 }
 
-	.social-navigation a {
+	.social-navigation a { // (0, 0, 1, 1)
 
 		font-size: 32px;
 		color: $main-green;
@@ -66,17 +66,17 @@ a[href*="instagram"]{
 }
 
 
-.site-info {
+.site-info { // (0, 0, 1, 0)
 
     text-align: center;
 	margin-top: 20px;
 	
-	a {
+	a { // (0, 0, 0, 1)
 
 		color: black;
 	}
 
-	a:hover {
+	a:hover { // (0, 0, 1, 1)
 		color: $main-green;
 		
 		}
@@ -91,12 +91,12 @@ a[href*="instagram"]{
 
 
 
-.footer-primary {
+.footer-primary { // (0, 0, 1, 0)
 
 display: flex;
 justify-content: space-between;
 
-.footer-navigation ul {
+.footer-navigation ul { // (0, 0, 1, 1)
 
     display: flex;
     justify-content: space-between;
@@ -111,13 +111,13 @@ justify-content: space-between;
 }
 
 
-.footer-secondary {
+.footer-secondary { // (0, 0, 1, 0)
 
 	display: flex;
 	justify-content: space-between;
 	margin-right: 70px;
 	
-	.social-navigation ul {
+	.social-navigation ul { // (0, 0, 1, 1)
 	
 		display: flex;
 		justify-content: space-around;
@@ -129,7 +129,7 @@ justify-content: space-between;
 
 
 
-	.social-navigation a {
+	.social-navigation a { // (0, 0, 1, 1)
 
 		font-size: 32px;
 	
@@ -139,7 +139,7 @@ justify-content: space-between;
 
 
 
-.site-info {
+.site-info { // (0, 0, 1, 0)
 
 text-align: center;
 
