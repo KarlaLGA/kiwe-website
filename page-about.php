@@ -20,6 +20,7 @@ get_header();
 		
 		<main id="main" class="site-main site-about">
 
+			<div class="about-us-header">
 			<p class="site-description"> <?php the_field('team_description'); ?> </p>
 
 			<div class="team-logo">
@@ -35,7 +36,7 @@ get_header();
 			}
 				?>
 			</div>
-				
+			</div>
 			<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" 
 			height="0" width="0" >
 				<defs>

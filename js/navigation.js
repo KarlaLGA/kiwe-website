@@ -8,11 +8,13 @@
 	var container, button, menu, links, i, len;
 
 	container = document.getElementById( 'site-navigation' );
+	console.log(container);
 	if ( ! container ) {
 		return;
 	}
 
 	button = container.getElementsByTagName( 'button' )[0];
+	console.log(button);
 	if ( 'undefined' === typeof button ) {
 		return;
 	}

@@ -117,7 +117,7 @@
     .ugb-container .ugb-container__content-wrapper>:last-child{/*(0,0,3,0)*/
     margin-bottom: 1rem !important;
     .ugb-container .ugb-container__content-wrapper>*{
-        margin: 1rem !important;
+        margin: 0rem !important;
     }
 }
     
@@ -146,22 +146,23 @@
 }
 
 /////////////////////////////////////////////////////////////////////
-.ugb-container .ugb-container__content-wrapper>*{/*(0,0,3,0)*/
-    //margin-bottom: 0rem !important;
-}
+
 /////////////////////////////////////////////////////////////////////
 .user-about-kiwe .ugb-container__wrapper .ugb-container__content-wrapper,
 .user-how-kiwe .ugb-container__wrapper .ugb-container__content-wrapper,
 .business-plan-kiwe .ugb-container__wrapper .ugb-container__content-wrapper
 {/*(0,0,3,0)*//*(0,0,3,0)*/
     display: block;
-
-    *{
-        margin-bottom: 1rem !important;
-    }
 }
 
 }
+
+.about-kiwe.restaurant-about-kiwe.section, .about-kiwe.user-about-kiwe.section{
+    margin-bottom: 0rem !important;
+}
+
+
+
 /////////////////////////////////////////////////////////////////////
 
 .user-about-kiwe, .user-how-kiwe, .restaurant-about-kiwe, .restaurant-how-kiwe{/*(0,0,1,0)*//*(0,0,1,0)*//*(0,0,1,0)*//*(0,0,1,0)*/
@@ -310,3 +311,7 @@
     }
 
 }
+
+
+
+
