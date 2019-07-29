@@ -12,7 +12,6 @@
 }
 
 .page-content,
-.entry-content,
 .entry-summary {
 	margin: 1.5em 0 0;
 }
@@ -22,7 +21,15 @@
 	margin: 0 0 1.5em;
 }
 
-#content {
-    background-color: $main-green;
-    border-radius: 20px;
+.user-content {
+     background-color: $main-green;
+}
+
+.restaurant-content {
+	background-color: $brown;
+}
+
+.site-main{
+	max-width: 1200px;
+	margin: 0 auto;
 }

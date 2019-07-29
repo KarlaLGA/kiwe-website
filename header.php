@@ -61,7 +61,7 @@
 		</div><!-- .site-branding -->
 
 		<nav id="site-navigation" class="main-navigation">
-			<!--<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'kiwe' ); ?></button>  -->
+			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"></button> 
 			<?php
 			wp_nav_menu( array(
 				'theme_location' => 'menu-main',
@@ -71,21 +71,38 @@
 		</nav><!-- #site-navigation -->
 		</div>
 
-<div class="header-secondary">
+		<?php if(is_home() || is_front_page() || is_page('rhome') ) :?>
 
-		<nav id="site-navigation" class="subheader-navigation">
-			<!-- <button class="menu-toggle" aria-controls="subheader-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'kiwe' ); ?></button> -->
-			<?php
-			wp_nav_menu( array(
-				'theme_location' => 'menu-subheader',
-				'menu_id'        => 'subheader-menu',
-			) );
-			?>
-		</nav><!-- #site-navigation -->
-		</div>
+			<div class="header-secondary">
+
+				<nav id="site-navigation" class="subheader-navigation">
+					<!-- <button class="menu-toggle" aria-controls="subheader-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'kiwe' ); ?></button> -->
+					<?php
+						wp_nav_menu( array(
+							'theme_location' => 'menu-subheader',
+							'menu_id'        => 'subheader-menu',
+						) );
+					?>
+					</nav><!-- #site-navigation -->
+			</div>
+
+		<?php endif; ?>
 
 
 
 	</header><!-- #masthead -->
 
-	<div id="content" class="site-content">
+	<?php if (is_home() || is_front_page()) : ?>
+
+		<div id="content" class="user-content">
+	
+	<?php elseif (is_page('rhome') ) : ?>
+
+		<div id="content" class="restaurant-content">
+	
+	<?php else : ?>
+
+		<div id="content" class="site-content">
+
+	<?php endif; ?>
+

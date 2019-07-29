@@ -1,18 +1,24 @@
 // Done by Luis
-.how-to-desktop,
-.how-to{
+.how-to-section, /* (0.0.1.0)*/
+.how-to,/* (0.0.1.0)*/
+.how-to-step,/* (0.0.1.0)*/
+.how-to-one{/* (0.0.1.0)*/
     background-color: $mid-green !important;
     border-radius: 10px;
     text-align: left;
-    padding: 2%;
-    margin: 1rem 1% 1rem 1%;
+    padding: 0;
+    margin: 0;
+    border: none !important;
+    box-shadow: none !important;
 
-    h2{
+    h2{/* (0.0.0.1)*/
         font-family: 'Source Serif Pro', serif;
         font-size: 37px;
         color: $brown;
         font-weight: bold;
-        span{
+        line-height: 1;
+
+         span{/* (0.0.0.1)*/
             font-family: Lobster, serif ;
             font-weight: bold;
             font-size: 37px;
@@ -20,55 +26,141 @@
 
         }
     }
-    p{
+    .how-to-text{/* (0.0.1.0)*/
         font-family:$font-how-steps;
-        font-weight: 700;
         font-size: 18px;
         color:black;
+        font-weight: 700;
+        margin-bottom: 0 !important;
     }
+
+    .how-to-p{/* (0.0.1.0)*/
+       font-family: $font-steps;
+       font-size: 16px;
+       color:black;
+       font-weight: 400;
+       margin-top: 0 !important;
+   }
+
 }
 
-.how-to{
+.how-to-step{/* (0.0.1.0)*/
+    margin: 0;
+    padding: 0;
+}
+
+
+.how-to .wp-block-embed__wrapper{/* (0.0.2.0)*/
     padding: 0;
     margin: 0;
 }
 
 
+.how-to-section{/*(0.0.1.0)*/
+    padding: 2%;
+    margin: 1rem 1%; 
+}
 
-.how-to-desktop{
-    ol{
-        margin-left: 0;
-        // max-width: 50%;
-        
-            li{
-            font-family:$font-how-steps;
-            font-weight: 700;
-            font-size: 18px;
-            color:black;
-        }
+
+@media screen and (max-width: 800px){
+.how-to-video {/* (0.0.1.0)*/
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 25px;
+    max-width: 700px;
+    max-height: auto;
+    margin: auto;
+    text-align: center;
+}
+.how-to-video iframe {/*(0.0.1.1)*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+}
+
+@media screen and (min-width: 801px){
+    .how-to .ugb-container__content-wrapper{/*(0.0.2.0)*/
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2%;
+    }
+
+    .how-to-step .ugb-container__wrapper .ugb-container__content-wrapper{/*(0.0.3.0)*/
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .how-to-step .ugb-container__wrapper{/*(0.0.2.0)*/
+        height: 100%;
+    }
+
+    figure{/* (0.0.0.1)*/
+        display: flex;
+        align-items: center;
+        margin-bottom: 0!important;
+    }
+
+    .how-to-p{/* (0.0.1.0)*/
+        margin-bottom: 0!important;
+        margin-block-end: 0!important;
+
     }
 }
 
-// .how-to-video{
-//     max-width: 50%;
-//     max-height: auto;
-// }
+.user-faq,/* (0.0.1.0)*/
+.restaurant-faq{/* (0.0.1.0)*/
+    background-color: $second-green !important;
+    border-radius: 10px;
+    padding: 2%;
+    margin: 1rem 1%;
 
-@media screen and (min-width: 1000px){
-    .how-to .ugb-container__content-wrapper{
-        display: flex;
-        justify-content: space-between;
+    h2{/* (0.0.0.1)*/
+        font-family: 'Source Serif Pro', serif;
+        font-size: 37px;
+        color: $main-green;
+        font-weight: bold;
+        line-height: 1;
+    }
+
+    .ugb-accordion__heading{/* (0.0.1.0)*/
+        font-family: $font-questions;
+        color: $brown;
+        background-color: $mid-green;
+        height: 100%;
+    }
+
+    .ugb-accordion__text{/* (0.0.1.0)*/
+        font-family: $font-steps;
+        color: black;
+        padding: 0;
+        margin: 0;
+        margin-top:.5rem !important;
+    }
 }
 
-.how-to-text{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding-right: 8px;
+.user-faq .wp-block-ugb-accordion.ugb-accordion.question-accordeon,/* (0.0.4.0)*/
+.restaurant-faq .wp-block-ugb-accordion.ugb-accordion.question-accordeon{/* (0.0.4.0)*/
+    margin-bottom: 1rem!important;
 }
 
+@media screen and (min-width: 770px){
+    .user-faq .ugb-container__content-wrapper,/* (0.0.2.0)*/
+    .restaurant-faq .ugb-container__content-wrapper{/* (0.0.2.0)*/
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: reapeat(6, 1fr) 1fr;
+        grid-gap: 2%;
+        
+        h2{/* (0.0.0.1)*/
+            grid-column: 1/3;
+        }
+    
+    }
 }
 
-.question-accordeon{
-    color: $main-green;
-}
+
