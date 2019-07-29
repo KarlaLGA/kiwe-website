@@ -1,7 +1,8 @@
 .main-navigation,
 #main-navigation-r {
 
-	margin: auto;
+	//margin: auto;
+	margin-top: 1rem;
 
 	.menu-main-menu-container {
 		display: none;
@@ -80,8 +81,7 @@
 /* Small menu. */
 .menu-toggle,
 .menu-toggle-r,
-.main-navigation.toggled ul,
-.main-navigation.toggled ul li {
+.main-navigation.toggled ul {
 	display: block;
 	
 }
@@ -106,7 +106,7 @@
 		}
 
 		li {
-			display: block;
+			display: inline-block;
 			padding: 0.5rem 13px;;
 		}
 	}
@@ -115,8 +115,9 @@
 
 .menu-toggle {
 	background-image: url('asset/hamburger-menu.png');
-	background-size: 85%;
-	width: 35px;
+	background-size: 10%;
+	width: 100%;
+	background-position-x: right;
 	height: 35px;
 	background-repeat: no-repeat;
 	margin-right: 8px;
