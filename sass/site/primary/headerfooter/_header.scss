@@ -81,7 +81,7 @@ padding-right: 10px;
 
     display:flex;
     justify-content: space-around;
-    background-color: $main-green;
+    
 
 .subheader-navigation {  // (0, 0, 1, 0)
 
@@ -121,6 +121,12 @@ li {  // (0, 0, 1, 0)
 width: 50%;
 text-align: center;
 border-radius: 10px 10px 0 0;
+}
+
+li:first-child { // (0, 0, 1, 0)
+
+    background-color: $main-green;
+
 }
 
 li:last-child { // (0, 0, 1, 0)
