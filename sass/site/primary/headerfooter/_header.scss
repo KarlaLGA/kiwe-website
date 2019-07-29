@@ -14,8 +14,8 @@ ul { // (0, 0, 0, 1)
     display:flex;
 
     justify-content: space-around;
-    width: 70vw;
-    //margin-top: 27px;
+    width: 65vw;
+  
 
 a { // (0, 0, 0, 1)
 
@@ -41,6 +41,7 @@ li:nth-child(4) { // (0, 0, 1, 1)
 color: $white;
 
     }
+
 }
 
 }
@@ -61,8 +62,8 @@ color: $white;
 
 display:flex;
 justify-content: center;
-width:25vw;
-margin-left: 3%;
+width:35vw;
+
 
 
 .site-title a { // (0, 0, 1, 1)
@@ -164,6 +165,7 @@ left:20px;
 
 display:flex;
 justify-content: center;
+
 
 
 
