@@ -18,19 +18,15 @@ get_header();
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 
-		<?php
-		while ( have_posts() ) :
-			the_post();
-
-			get_template_part( 'template-parts/content', 'page' );
-
-			// If comments are open or we have at least one comment, load up the comment template.
-			if ( comments_open() || get_comments_number() ) :
-				comments_template();
-			endif;
-
-		endwhile; // End of the loop.
-		?>
+		<div id="wp-vue-app">           
+             <!-- <iframe src=" -->
+                <?php
+                    // echo get_template_directory_uri() . '/restaurant-side/index.html';
+                ?>
+                
+                <!-- " frameborder="0"></iframe>  -->
+				<iframe src="http://restaurant.kiwe.wmdd.ca" frameborder="0"></iframe>
+        </div><!-- #vue-app -->
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
