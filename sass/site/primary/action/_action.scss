@@ -1,5 +1,10 @@
+// =============================================
+// THIS CSS STYLING WAS MADE BY DIANA GUNAWAN
+// =============================================
+
+
 //ALL PAGE
-.page{
+.page{ 
     overflow-x: hidden;
     //overflow-y: visible;
 }
@@ -45,8 +50,6 @@
 .demo-footer .ugb-container__content-wrapper {
     display: flex;
     justify-content: center;
-    //justify-content: space-around;
-    //align-items: center;
     position: relative;
     padding-left: 1rem;
     padding-top: 1rem;
@@ -62,6 +65,7 @@
     }
 }
 
+.download-footer,
 .demo-footer {
     padding-top: 0;
     .ugb-container__content-wrapper {
@@ -71,9 +75,7 @@
 }
 
 .download-customer,
-.download,
-.demo-restaurant,
-.demo-text {
+.demo-restaurant {
     color: white;
     overflow: visible;
     border: none;
@@ -87,6 +89,7 @@
         display: block;
     }
 
+    .download-button,
     .demo-buttons-header,
     .demo-buttons-footer {
         padding: 0 !important;
@@ -120,18 +123,13 @@
     height: fit-content;
     padding-bottom: 0%;
 
-    // .img-background-kiwe-icon{
-    //     position: absolute;
-    //     right: -2vw;
-    //     top: 50%;
-    //     transform: scale(2.2) translateY(-25%);
-    //     z-index: 0;
-    // }
+
 
 }
 
 .demo-header-text {
     margin-bottom: 0 !important;
+
     .ugb-container__content-wrapper {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -146,6 +144,7 @@
             grid-column: 1 / 3;
         }
 
+        .download-buttons-container,
         .demo-buttons-container {
             .ugb-container__content-wrapper {
                 display: block;
@@ -162,6 +161,7 @@
     }
 }
 
+.download-footer-text,
 .demo-footer-text {
     position: relative;
     padding-top: 0;
@@ -171,6 +171,8 @@
         margin-bottom: 7vh !important;
 
     }
+    
+    .download-buttons-container,
     .demo-buttons-container {
         .ugb-container__content-wrapper {
             display: block;
@@ -232,7 +234,9 @@
         }
     }
 
+    .download-footer-text, 
     .demo-footer-text {
+        .download-buttons-container,
         .demo-buttons-container {
             .ugb-container__content-wrapper {
                 display: flex;
@@ -240,6 +244,7 @@
                     justify-content: center;
                     align-items: center;
 
+                    .download-button,
                     .demo-button,
                     .button-learn {
                         margin: auto 1% 0 1% !important;
@@ -282,13 +287,14 @@
     padding-right:0;
     }
 }
-
-.download-footer{ 
+// re-check this code
+// .download-footer{ 
         
-        .download{
-            justify-content: center;
-        }
-}
+//         .download{
+//             justify-content: center;
+//         }
+// }
+
 //END OF CUSTOMER PAGE 
 
 // RESTAURANT PAGE
@@ -306,6 +312,7 @@
 
 // RESTAURATN PAGE - FOOTER
 
+.download-footer,
 .demo-footer {
     margin-left: 0;
     padding-bottom: 0 !important;
@@ -318,11 +325,21 @@
 
 //END OF RESTAURANT PAGE 
 @media screen and (min-width: 1000px){
-    .download,
-    .demo-header-text{
+    .download-header-text,
+    .download-footer-text,
+    .demo-header-text{ 
             width: 40%;
+            .download-buttons-container{
+                width: 70%;
+                text-align: center;
+            }
     }
 
+    // .download-buttons-container{
+    //     width: 40%;
+    // }
+
+    .download-button,
     .button-learn {
         margin-bottom: 0 !important;
     }
@@ -332,11 +349,13 @@
         padding-left: 35px !important;
     }
 
+    .download-footer,
     .demo-footer {
         padding-right: 35px !important;
         padding-bottom: 0 !important;
     }
 
+    .download-footer-text,
     .demo-footer-text {
         text-align: center;
 
@@ -345,37 +364,43 @@
             margin-bottom: 0 !important;
     
         }
-
     }
-
-    .download-header .img-mobile-icon,
-    .demo-header .img-desktop-icon{
+//mobile & desktop icon - general
+        .img-mobile-icon,
+        .img-desktop-icon{ //(0,0,1,0)
         width: 25%;
         display: block;
-        margin-left: 10vw;
 
-        img{
+        img{ //(0,0,1,1)
             position: relative;
             transform: scale(1.3);
             z-index: 1;
         }
     }
 
-    .download-footer .img-mobile-icon,
-    .demo-footer .img-desktop-icon{
-        width: 25%;
-        display: block;
-        margin-right: 5vw;
 
-        img{
-            position: relative;
-            transform: scale(1.3);
-            z-index: 1;
+//mobile & desktop icon - header
+    .download-header .img-mobile-icon,
+    .demo-header .img-desktop-icon{ //(0,0,2,0)
+        margin-left: 10vw;
+    }
+
+
+    //mobile & desktop icon - footer
+    .download-footer .img-mobile-icon,
+    .demo-footer .img-desktop-icon{ //(0,0,2,0)
+        margin-right: 5vw;
+        img{ //(0,0,2,1)
             margin-top: 22vh;
         }
     }
 
-    .demo-buttons-container .ugb-container__content-wrapper{
+   
+
+    .download-buttons-container,
+    .demo-buttons-container {
+
+    .ugb-container__content-wrapper{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -385,7 +410,7 @@
         .wp-block-image{
             width: 48%;
         }
-    }
+    }}
 } 
 //end of media query 1000px
 
