@@ -165,7 +165,8 @@
     padding-top: 0;
 
     .ugb-container__content-wrapper {
-        margin-top: 25vh !important;
+        margin-top: 19vh !important;
+        margin-bottom: 7vh !important;
 
     }
     .demo-buttons-container {
@@ -264,7 +265,7 @@
 .download-footer,
 .demo-footer{
     padding-left: 0;
-    padding-top:3%;
+    //padding-top:3%;
 }
 
 .img-background-footer {
@@ -309,7 +310,7 @@
 }
 
 .page-id-18 #content {
-    background-color: hotpink;
+    background-color: $brown;
 }
 
 
@@ -337,13 +338,18 @@
     .demo-footer-text {
         text-align: center;
 
+        .ugb-container__content-wrapper {
+            margin-top: 25vh !important;
+            margin-bottom: 0 !important;
+    
+        }
+
     }
 
     .download-header .img-mobile-icon,
     .demo-header .img-desktop-icon{
         width: 25%;
         display: block;
-        //right:30rem;
         margin-left: 10vw;
 
         img{
