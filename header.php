@@ -60,7 +60,8 @@
 
 		</div><!-- .site-branding -->
 
-		<?php if (is_page('rhome') ) : ?>
+		<?php if (is_page('rhome') ) :  ?>
+
 
 		<nav id="site-navigation nav-restaurant" class="main-navigation">
 			<button class=" menu-toggle" aria-controls="primary-menu" aria-expanded="false"></button> 
@@ -84,8 +85,7 @@
 			?>
 		</nav><!-- #site-navigation -->
 
-		<?php endif; ?>
-
+			<?php endif; ?>
 		</div>
 
 		<?php if(is_home() || is_front_page() || is_page('rhome') ) :?>
