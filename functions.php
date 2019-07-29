@@ -45,7 +45,7 @@ if ( ! function_exists( 'kiwe_setup' ) ) :
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
 			'menu-main' => esc_html__( 'Primary', 'kiwe' ),
-			'menu-main-r' => esc_html__( 'Primary-Restaurant', 'kiwe' ),
+			'menu-main-r' => esc_html__( 'Primary-Rest', 'kiwe' ),
 			'menu-subheader' => esc_html__( 'Subheader', 'kiwe' ),
 			// 'menu-user' => esc_html__( 'User Side', 'kiwe' ),
 			// 'menu-restaurant' => esc_html__( 'Restaurant Side', 'kiwe' ),

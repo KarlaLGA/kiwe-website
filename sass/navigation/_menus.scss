@@ -1,7 +1,14 @@
-.main-navigation {
+.main-navigation,
+#main-navigation-r {
+
+	margin: auto;
+
+	.menu-main-menu-container {
+		display: none;
+	}
 	
 	display: block;
-	margin-top: 16px;
+	//margin-top: 16px;
 	
 
 	ul {
@@ -72,6 +79,7 @@
 
 /* Small menu. */
 .menu-toggle,
+.menu-toggle-r,
 .main-navigation.toggled ul,
 .main-navigation.toggled ul li {
 	display: block;
@@ -85,7 +93,7 @@
 	align-items: flex-end;
 
 	.menu-main-menu-container {
-		width: 100%;
+		width: 100%;display: block;
 	}
 
 	ul {
@@ -146,6 +154,13 @@
 			display: none;
 		}
 
+		.main-navigation {
+
+			.menu-main-menu-container {
+				display: block;
+			}
+		}
+
 		
 		.main-navigation,
 		.main-navigation ul,
@@ -153,7 +168,11 @@
 			display:flex;
         justify-content: space-around;
         width: 70vw;
-        margin-top: 27px;
+		}
+
+		.main-navigation ul,
+		.main-navigation.toggled ul {
+			//margin-top: 27px;;
 		}
 		
 		
