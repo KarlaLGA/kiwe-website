@@ -4,8 +4,8 @@
 
  .header-primary { // (0, 0, 1, 0)
 
-    display:flex;
-    justify-content: space-between;
+    display:grid;
+    grid-template-columns: 25vw 75vw;    
     position: relative;
 
 ul { // (0, 0, 0, 1)

@@ -63,7 +63,7 @@
 		<?php if (is_page('rhome') ) :  ?>
 
 
-		<nav id="site-navigation nav-restaurant" class="main-navigation">
+		<nav id="site-navigation" class="main-navigation">
 			<button class=" menu-toggle" aria-controls="primary-menu" aria-expanded="false"></button> 
 			<?php
 			wp_nav_menu( array(
