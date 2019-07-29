@@ -31,7 +31,7 @@
 .download-customer,
 .download,
 .demo-restaurant,
-.demo-header-text {
+.demo-text {
     color: white;
     overflow: visible;
     border: none;
@@ -84,6 +84,9 @@
 .demo-footer{
     padding-left: 0;
     padding-top:3%;
+    position: relative;
+    height: fit-content;
+    padding-bottom: 0%;
 }
 
 .img-background-footer {
