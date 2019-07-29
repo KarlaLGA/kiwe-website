@@ -28,7 +28,8 @@
     padding-left: 0 !important;
 }
 
-.download-customer .ugb-container__content-wrapper {
+.download-customer .ugb-container__content-wrapper,
+.demo-restaurant .ugb-container__content-wrapper {
     display: flex;
     justify-content: flex-start;
     //justify-content: space-around;
