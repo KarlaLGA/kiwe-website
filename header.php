@@ -62,12 +62,12 @@
 
 		<?php if (is_page('rhome') ) : ?>
 
-		<nav id="site-navigation-r" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu-r" aria-expanded="false"></button> 
+		<nav id="site-navigation nav-restaurant" class="main-navigation">
+			<button class=" menu-toggle" aria-controls="primary-menu" aria-expanded="false"></button> 
 			<?php
 			wp_nav_menu( array(
 				'theme_location' => 'menu-main-r',
-				'menu_id'        => 'primary-menu',
+				'menu_id'        => 'primary-menu-r',
 			) );
 			?>
 		</nav><!-- #site-navigation -->
@@ -85,7 +85,7 @@
 		</nav><!-- #site-navigation -->
 
 		<?php endif; ?>
-		
+
 		</div>
 
 		<?php if(is_home() || is_front_page() || is_page('rhome') ) :?>
