@@ -131,7 +131,7 @@
         font-family: $font-questions;
         color: $brown;
         background-color: $mid-green;
-        height: 100%;
+        // height: 100%;
     }
 
     .ugb-accordion__text{/* (0.0.1.0)*/
@@ -161,6 +161,15 @@
         }
     
     }
+
+
+    .user-faq,/* (0.0.1.0)*/
+    .restaurant-faq{/* (0.0.1.0)*/
+    padding-bottom: 40px;
+    overflow: visible;
+    }
+
+
 }
 
 
