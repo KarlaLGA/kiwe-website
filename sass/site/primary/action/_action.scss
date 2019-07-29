@@ -28,8 +28,8 @@
     padding-left: 0 !important;
 }
 
-.download-customer .ugb-container__content-wrapper,
-.demo-restaurant .ugb-container__content-wrapper {
+.download-header .ugb-container__content-wrapper,
+.demo-header .ugb-container__content-wrapper {
     display: flex;
     justify-content: flex-start;
     //justify-content: space-around;
@@ -39,9 +39,32 @@
     padding-top: 1rem;
 }
 
-.demo-restaurant {
+.download-footer .ugb-container__content-wrapper,
+.demo-footer .ugb-container__content-wrapper {
+    display: flex;
+    justify-content: center;
+    //justify-content: space-around;
+    //align-items: center;
+    position: relative;
+    padding-left: 1rem;
+    padding-top: 1rem;
+
+    h2 {
+        text-align: center;
+    }
+}
+
+.demo-header {
     .ugb-container__content-wrapper {
         padding-top: 1rem;
+    }
+}
+
+.demo-footer {
+    padding-top: 0;
+    .ugb-container__content-wrapper {
+        margin-top: 0 !important;
+        padding-top: 0;
     }
 }
 
@@ -62,8 +85,10 @@
         display: block;
     }
 
-    .demo-buttons-header {
+    .demo-buttons-header,
+    .demo-buttons-footer {
         padding: 0 !important;
+        text-align: center;
 
         .ugb-container__content-wrapper {
             padding: 0 !important;
@@ -135,6 +160,29 @@
     }
 }
 
+.demo-footer-text {
+    position: relative;
+    padding-top: 0;
+
+    .ugb-container__content-wrapper {
+        margin-top: 25vh !important;
+
+    }
+    .demo-buttons-container {
+        .ugb-container__content-wrapper {
+            display: block;
+            margin-top: 0 !important;
+            
+            .wp-block-button__link {
+                background-color: $brown;
+                border-radius: 4.5px;
+                width: 180px;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+        }
+    }}
+
 @media screen and (min-width:334px) {
     .demo-header-text {
         .ugb-container__content-wrapper {
@@ -178,6 +226,22 @@
             // .button-learn {
             //     grid-column: 2 / 3;
             // }
+        }
+    }
+
+    .demo-footer-text {
+        .demo-buttons-container {
+            .ugb-container__content-wrapper {
+                display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    align-items: center;
+
+                    .demo-button,
+                    .button-learn {
+                        margin: auto 1% 0 1% !important;
+                    }
+            }
         }
     }
 }
@@ -239,6 +303,11 @@
 
 // RESTAURATN PAGE - FOOTER
 
+.demo-footer {
+    margin-left: 0;
+    padding-bottom: 0 !important;
+}
+
 .page-id-18 #content {
     background-color: hotpink;
 }
@@ -255,14 +324,23 @@
         margin-bottom: 0 !important;
     }
 
-    .demo-header,
-    .demo-restaurant {
+    .demo-header {
         padding-top: 60px !important;
         padding-left: 35px !important;
     }
 
-    .img-mobile-icon,
-    .img-desktop-icon{
+    .demo-footer {
+        padding-right: 35px !important;
+        padding-bottom: 0 !important;
+    }
+
+    .demo-footer-text {
+        text-align: center;
+
+    }
+
+    .download-header .img-mobile-icon,
+    .demo-header .img-desktop-icon{
         width: 25%;
         display: block;
         //right:30rem;
@@ -272,6 +350,33 @@
             position: relative;
             transform: scale(1.4);
             z-index: 1;
+        }
+    }
+
+    .download-footer .img-mobile-icon,
+    .demo-footer .img-desktop-icon{
+        width: 25%;
+        display: block;
+        //right:30rem;
+        margin-right: 5vw;
+
+        img{
+            position: relative;
+            transform: scale(1.4);
+            z-index: 1;
+            margin-top: 22vh;
+        }
+    }
+
+    .demo-buttons-container .ugb-container__content-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 0 !important;
+
+        .wp-block-image{
+            width: 48%;
         }
     }
 } 
