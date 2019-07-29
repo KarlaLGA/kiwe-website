@@ -61,6 +61,10 @@
     margin: 1rem 1%; 
 }
 
+.ugb-accordion__heading{/* (0.0.1.0)*/
+ padding: 15px 17.5px;
+}
+
 
 @media screen and (max-width: 800px){
 .how-to-video {/* (0.0.1.0)*/
@@ -131,7 +135,6 @@
         font-family: $font-questions;
         color: $brown;
         background-color: $mid-green;
-        // height: 100%;
     }
 
     .ugb-accordion__text{/* (0.0.1.0)*/
@@ -163,10 +166,12 @@
     }
 
 
-    .user-faq,/* (0.0.1.0)*/
-    .restaurant-faq{/* (0.0.1.0)*/
-    padding-bottom: 40px;
-    overflow: visible;
+    .user-faq{/* (0.0.1.0)*/
+        padding-bottom: 40px;
+    }
+
+    .ugb-accordion__heading{/* (0.0.1.0)*/
+        height:75px;
     }
 
 
