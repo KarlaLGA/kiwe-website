@@ -31,6 +31,13 @@
     //align-items: center;
     position: relative;
     padding-left: 1rem;
+    padding-top: 1rem;
+}
+
+.demo-header {
+    .ugb-container__content-wrapper {
+        padding-top: 1rem;
+    }
 }
 
 .download-customer,
@@ -61,6 +68,10 @@
             width: 48%;
         }
     }
+}
+
+.demo-header-text {
+    padding-top: 0;
 }
 
 .download-header,
@@ -194,6 +205,10 @@
 
 
 // RESTAURATN PAGE - FOOTER
+
+.page-id-18 #content {
+    background-color: hotpink;
+}
 
 
 //END OF RESTAURANT PAGE 
