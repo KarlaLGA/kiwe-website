@@ -39,13 +39,14 @@
 }
 
 .download,
-.demo-header-text{
+.demo-text{
     width: 70%;
     .ugb-container__content-wrapper{
         display: block;
     }
 
-    .download-buttons-container .ugb-container__content-wrapper {
+    .download-buttons-container .ugb-container__content-wrapper,
+    .demo-buttons-container .ugb-container__content-wrapper{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -62,14 +63,6 @@
     position: relative;
     height: fit-content;
     padding-bottom: 0%;
-
-    // .img-background-kiwe-icon{
-    //     position: absolute;
-    //     right: -2vw;
-    //     top: 50%;
-    //     transform: scale(2.2) translateY(-25%);
-    //     z-index: 0;
-    // }
 }
 
 .img-background-header {
@@ -87,14 +80,26 @@
 
 //CUSTOMER PAGE - FOOTER
 
-.download-footer{
-    // .img-background-kiwe-icon{
-    //     position: absolute;
-    //     left: -7vw;
-    //     top: 50%;
-    //     transform: scale(2.2) translateY(-20%);
-    //     z-index: 0;
-    //}  
+.download-footer,
+.demo-footer{
+    padding-left: 0;
+    padding-top:3%;
+}
+
+.img-background-footer {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    img{
+    top: 0;
+    width: 100%;
+    height: auto;
+    padding-top: 3%;
+    padding-right:0;
+    }
+}
+
+.download-footer{ 
         
         .download{
             justify-content: center;
