@@ -5,46 +5,51 @@
  .header-primary { // (0, 0, 1, 0)
 
     display:grid;
-    grid-template-columns: 25vw 75vw;    
+    grid-template-columns: 35vw 65vw;    
     position: relative;
 
-ul { // (0, 0, 0, 1)
 
 
-    display:flex;
+    ul { // (0, 0, 0, 1)
 
     justify-content: space-around;
     width: 65vw;
   
 
-a { // (0, 0, 0, 1)
+        // display:flex;
 
-color:black;
+        // justify-content: space-around;
+        // width: 70vw;
+        //margin-top: 27px;
 
-}
+        a { // (0, 0, 0, 1)
+
+        color:black;
+
+        }
 
 
-a:hover { // (0, 0, 1, 1)
+        a:hover { // (0, 0, 1, 1)
 
-    color:$main-green;
+            color:$main-green;
+
+        }
+
+
+        li:nth-child(4) { // (0, 0, 1, 1)
+            padding: 2px 10px;
+            background-color: $second-green;
+            border-radius: 5px;
+            color: black;
+            margin: 0.5rem 0;
+
+            a { // (0, 0, 0, 1)
+            color: black !important;
+
+            }
+        }
 
     }
-
-
-li:nth-child(4) { // (0, 0, 1, 1)
-    padding: 2px 10px;
-    background-color: $main-green;
-    border-radius: 5px;
-    color: $white;
-
-    a { // (0, 0, 0, 1)
-color: $white;
-
-    }
-
-}
-
-}
 
 }
 
@@ -62,7 +67,7 @@ color: $white;
 
 display:flex;
 justify-content: center;
-width:35vw;
+width:100%;
 
 
 
@@ -140,6 +145,31 @@ li:last-child { // (0, 0, 1, 0)
 
 }
 
+@media screen and (min-width:475px) {
+    .header-primary {
+        display: flex;
+        justify-content: space-between;
+
+        ul {
+            li:nth-child(4) { // (0, 0, 1, 1)
+                padding: 2px 10px;
+                background-color: $main-green;
+                border-radius: 5px;
+                color: $white;
+    
+                a { // (0, 0, 0, 1)
+                color: $white;
+    
+                }
+            }
+        }
+    }
+
+    .site-branding {
+        width: 23vw;
+        margin-left: 2vw;
+    }
+}
 
 @media screen and (min-width:762px) {
 
