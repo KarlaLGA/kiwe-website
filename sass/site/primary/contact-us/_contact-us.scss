@@ -2,17 +2,22 @@
 
 // STYLING DONE BY KARLA LOPEZ 
 
-.contact-main { /* (0, 0, 1, 0) */
+.contact-content {
     background-color: $main-green;
+}
+
+.contact-main { /* (0, 0, 1, 0) */
     border-radius: 20px;
     padding-top: 4rem;
     padding-bottom: 4rem;
+    
+
 
     .site-contact { /* (0, 0, 1, 0) */
-        background-color: white;
-        margin: 0 2.5%;
+        margin: 0;
         border-radius: 20px;
         padding: 2rem 5%;
+        background-color: white;
 
         .entry-title { /* (0, 0, 1, 0) */
             font-family: $sc-font-family;

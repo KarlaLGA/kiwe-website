@@ -116,6 +116,14 @@
 	<?php elseif (is_page('rhome') ) : ?>
 
 		<div id="content" class="restaurant-content">
+
+	<?php elseif (is_page('about') ) : ?>
+
+		<div id="content" class="about-content">
+
+	<?php elseif (is_page('contact-us') ) : ?>
+
+		<div id="content" class="contact-content">
 	
 	<?php else : ?>
 
