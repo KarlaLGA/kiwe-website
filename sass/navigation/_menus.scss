@@ -2,14 +2,15 @@
 #main-navigation-r {
 
 	//margin: auto;
-	margin-top: 1rem;
+	display: block;
+	margin-top: 4vh;
+	width: 63vw;
+	margin-right: 2vw;
+	
 
 	.menu-main-menu-container {
 		display: none;
 	}
-	
-	display: block;
-	//margin-top: 16px;
 	
 
 	ul {
@@ -42,13 +43,6 @@
 				width: 200px;
 			}
 
-			:hover > a,
-			.focus > a {
-			}
-
-			a:hover,
-			a.focus {
-			}
 		}
 
 		li:hover > ul,
@@ -61,20 +55,11 @@
 		// float: left;
 		// position: relative;
 
-		&:hover > a,
-		&.focus > a {
-		}
 	}
 
 	a {
 		display: block;
 		text-decoration: none;
-	}
-
-	.current_page_item > a,
-	.current-menu-item > a,
-	.current_page_ancestor > a,
-	.current-menu-ancestor > a {
 	}
 }
 
@@ -87,27 +72,48 @@
 }
 
 .main-navigation.toggled {
-	display: flex;
-	width: 100%;
-	flex-direction: column;
-	align-items: flex-end;
+	
 
 	.menu-main-menu-container {
 		width: 100%;display: block;
 	}
 
-	ul {
-		background-color: salmon;
+	#primary-menu {
+		background-color: $main-green;
+	}
+
+	#primary-menu-r {
+		background-color: $brown;
+	}
+
+	#primary-menu,
+	#primary-menu-r {
 		width: 100%;
 		text-align: right;
+		display: flex;
+		width: 100vw;
+		left: -35vw;
+		position: relative;
+		flex-wrap: wrap;
+		align-items: flex-end;
+		padding-top: 1vh;
+		padding-bottom: 3vh;
+		margin-top: 1vh;
+		margin-bottom: 3vh;
 
-		@media screen and (min-width:430px) {
+		@media screen and (min-width:475px) {
 			background-color: transparent;
 		}
 
 		li {
 			display: inline-block;
-			padding: 0.5rem 13px;;
+			padding: 0.5rem 13px;
+			width: 48%;
+			text-align: center;
+
+			a {
+				color: white;
+			}
 		}
 	}
 }
@@ -115,12 +121,12 @@
 
 .menu-toggle {
 	background-image: url('asset/hamburger-menu.png');
-	background-size: 10%;
+	background-size: 25px;
 	width: 100%;
 	background-position-x: right;
 	height: 35px;
 	background-repeat: no-repeat;
-	margin-right: 8px;
+	//margin-right: 8px;
 	background-color: transparent;
 	border: none;
 }
@@ -150,31 +156,36 @@
 
 
 
-	@media screen and (min-width:430px) {
-		.menu-toggle {
-			display: none;
-		}
+@media screen and (min-width:475px) {
+	.menu-toggle {
+		display: none;
+	}
 
-		.main-navigation {
+	.main-navigation {
+		align-self: center;
+		margin-top: 0;
 
-			.menu-main-menu-container {
-				display: block;
-			}
+		.menu-main-menu-container {
+			display: block;
 		}
+	}
 
 		
-		.main-navigation,
-		.main-navigation ul,
-		.main-navigation.toggled ul {
-			display:flex;
-        justify-content: space-around;
-        width: 70vw;
-		}
+	.main-navigation {
+		display: block;
+	}
 
-		.main-navigation ul,
-		.main-navigation.toggled ul {
-			//margin-top: 27px;;
-		}
+	.main-navigation ul,
+	.main-navigation.toggled ul {
+		display:flex;
+        justify-content: space-between;
+        // width: 70vw;
+	}
+
+	// .main-navigation ul,
+	// .main-navigation.toggled ul {
+	// 	margin-top: 27px;;
+	// }
 		
 		
 }
