@@ -152,9 +152,20 @@ function kiwe_scripts() {
 
 	}
 
+	if(is_page(2))
+	{
 	//Home Page Middle Menu 
 	wp_enqueue_script( 'kiwe-middle-menu', get_template_directory_uri() . '/js/middle-menu.js', array('jquery'), '20190729', true );
+	}
+
+	if(is_page(18))
+	{
+	//Restaurant Page Middle Menu
+	wp_enqueue_script( 'kiwe-middle-menu-restaurant', get_template_directory_uri() . '/js/middle-menu-restaurant.js', array('jquery'), '20190729', true );
 	
+
+	}
+
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
