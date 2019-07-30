@@ -63,6 +63,12 @@ a[href*="instagram"]{
 		color: $main-green;
 	}
 
+	.social-navigation a:hover { // (0, 0, 2, 1)
+
+		
+		color: $accent;
+	}
+
 }
 
 
