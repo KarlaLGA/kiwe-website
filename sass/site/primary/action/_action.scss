@@ -40,7 +40,6 @@
     display: flex;
     justify-content: flex-start;
     //justify-content: space-around;
-    //align-items: center;
     position: relative;
     padding-left: 1rem;
     padding-top: 1rem;
@@ -120,6 +119,8 @@
     .wp-block-image {
         width: 48%;
         display: inline-block;
+        margin-bottom: 1rem !important;
+        margin-left: 2%;
     }
 }
 
