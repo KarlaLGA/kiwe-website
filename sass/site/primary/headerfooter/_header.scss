@@ -210,14 +210,12 @@ li:last-child { // (0, 0, 1, 0)
 
 @keyframes logoRight {
     0% {
-    transform: translateX(-300px);
+    transform: translateX(-300px) rotate(-720deg);
     }
 
-    50% {
-    transform: translateX(50px) rotate(180deg);
-    }
+    
 
     100% {
-    transform: translateX(0) rotate(-360deg);
+    transform: translateX(0) rotate(0deg);
     }
 }
