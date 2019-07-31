@@ -6,7 +6,7 @@
 //     {
 
 //     $('.about-us-header').css({
-//         'transform' : 'translateY('+ wScroll/6 +'%)'
+//         'transform' : 'translateY('+ wScroll +'%)'
 //     })
 
 //     $('.about-us-content').css({
@@ -18,7 +18,7 @@
 //     {   
 //         console.log('helo');
 //         $('.about-us-header').css({
-//             'transform' : 'translateY('+ wScroll/2+'%)'
+//             'transform' : 'translateY('+ wScroll*1.1+'%)'
 //         })
     
 //         $('.about-us-content').css({
