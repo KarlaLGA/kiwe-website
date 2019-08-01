@@ -18,6 +18,13 @@
 
 }
 
+.download-buttons-container,
+.download-footer .download {
+    .wp-block-image {
+        width: 180px;
+    }
+}
+
 //CUSTOMER PAGE
 .img-mobile-icon{
     display: none;
@@ -25,6 +32,9 @@
 
 .download-customer{
     background-color: $brown !important;
+    border-radius: 10px !important;
+    margin: 1rem 1% 0rem 1% !important;
+
 }
 
 //CUSTOMER PAGE - HEADER
@@ -39,7 +49,6 @@
 .demo-header .ugb-container__content-wrapper {
     display: flex;
     justify-content: flex-start;
-    //justify-content: space-around;
     position: relative;
     padding-left: 1rem;
     padding-top: 1rem;
@@ -105,22 +114,28 @@
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
+}
 
-        .wp-block-image{
-            width: 48%;
-        }
+.demo-buttons-container .ugb-container__content-wrapper {
+    .wp-block-image{
+        width: 48%;
     }
+}
 }
 
 .download-footer .download .ugb-container__content-wrapper {
-    margin-top: 4vh !important;
+    margin-top: 10% !important;
     margin-bottom: 1vh !important;
+
+    // @media screen and (min-width:830px) {
+    //     margin-top: 13vh !important;
+    // }
     
     .wp-block-image {
-        width: 48%;
+        width: 180px;
         display: inline-block;
         margin-bottom: 1rem !important;
-        margin-left: 2%;
+        //margin-left: 2%;
     }
 }
 
@@ -227,6 +242,7 @@
                     flex-wrap: wrap;
                     justify-content: space-evenly;
                     align-items: center;
+                    padding-left: 0 !important;
 
                     .demo-button,
                     .button-learn {
@@ -234,14 +250,6 @@
                     }
                 }
             }
-
-            // .button-demo {
-            //     grid-column: 1 / 2;
-            // }
-
-            // .button-learn {
-            //     grid-column: 2 / 3;
-            // }
         }
     }
 
@@ -252,7 +260,7 @@
             .ugb-container__content-wrapper {
                 display: flex;
                     flex-wrap: wrap;
-                    justify-content: center;
+                    justify-content: space-between;
                     align-items: center;
 
                     .download-button,
@@ -284,6 +292,15 @@
 .demo-footer{
     padding-left: 0;
     //padding-top:3%;
+}
+
+.download-footer-text {
+    padding-bottom: 0 !important;
+}
+
+.download-footer .download-buttons-container {
+    padding: 30px 0 !important;
+
 }
 
 .img-background-footer {
@@ -340,7 +357,7 @@
     .demo-header-text{ 
             width: 40%;
             .download-buttons-container{
-                width: 70%;
+                width: 100%;
                 text-align: center;
             }
     }
