@@ -253,21 +253,26 @@
         }
     }
 
+    .download-footer-text .download-buttons-container {
+        text-align: center;
+    }
     .download-footer-text, 
     .demo-footer-text {
         .download-buttons-container,
         .demo-buttons-container {
             .ugb-container__content-wrapper {
                 display: flex;
-                    flex-wrap: wrap;
-                    justify-content: space-between;
-                    align-items: center;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: center;
+                max-width: 400px;
+                margin: auto;
 
-                    .download-button,
-                    .demo-button,
-                    .button-learn {
-                        margin: auto 1% 0 1% !important;
-                    }
+                .download-button,
+                .demo-button,
+                .button-learn {
+                    margin: auto 1% 0 1% !important;
+                }
             }
         }
     }
@@ -365,11 +370,26 @@
     .download-footer {
 
         .download {
-            width: 40%;
-            margin-left: 20vw;
+            width: 50%;
+            margin-left: 18vw;
 
             .ugb-container__content-wrapper {
-                margin-top: 12vh !important;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-evenly;
+                height: 35vh;
+                margin-top: 10% !important;
+
+                .download-buttons-container {
+                    //padding-top: 0 !important;
+                    padding: 0 !important;
+
+                    .ugb-container__content-wrapper {
+                        display: block;
+                        height: auto;
+                    }
+                }
 
             }
 
@@ -379,10 +399,6 @@
             }
         }
     }
-
-    // .download-buttons-container{
-    //     width: 40%;
-    // }
 
     .download-button,
     .button-learn {
@@ -433,7 +449,6 @@
             margin-bottom: 3rem !important;
     }
 
-
 //mobile & desktop icon - header
     .download-header .img-mobile-icon,
     .demo-header .img-desktop-icon{ //(0,0,2,0)
@@ -442,7 +457,7 @@
 
     .download-header,
     .demo-header {
-        margin-top: 3rem;
+        margin-top: 3rem !important;
     }
 
 
