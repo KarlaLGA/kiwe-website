@@ -10,10 +10,13 @@
     color: white;
 
     font-family: 'Lobster', serif;
-    font-weight: normal;
     font-size: 2rem;
     letter-spacing: 1px;
     line-height: 1;
+
+    h2{/*(0,0,0,1)*/
+        font-weight: normal;
+    }
 }
 
 .page-id-2 .tagline{/*(0,0,2,0)*/
@@ -28,10 +31,13 @@
     color: white;
 
     font-family: 'Lobster', serif;
-    font-weight: normal;
     font-size: 2rem;
     letter-spacing: 1px;
     line-height: 1;
+
+    h2{/*(0,0,0,1)*/
+        font-weight: normal;
+    }
 }
 
 
@@ -96,7 +102,7 @@
     padding: 0;
 
     .ugb-container .ugb-container__content-wrapper>:last-child{/*(0,0,3,0)*/
-    margin-bottom: 1rem !important;
+   // margin-bottom: 1rem !important;
     .ugb-container .ugb-container__content-wrapper>*{
         margin: 0rem !important;
     }
@@ -119,11 +125,7 @@
 .restaurant-how-kiwe .ugb-container__wrapper .ugb-container__content-wrapper
 {/*(0,0,3,0)*/
     display: block;
-    min-height: 200px;
-
-    *{
-        margin-bottom: 1rem !important;
-    }
+    min-height: 200px;   
 }
 
 /////////////////////////////////////////////////////////////////////
@@ -174,6 +176,7 @@
             font-size: 37px;
             color:$main-green;
             text-transform: lowercase;
+            letter-spacing: -1.5px;
         }
     }
 
@@ -305,7 +308,8 @@
     }
 }
 
-.user-about-container .ugb-container .ugb-container__content-wrapper > :last-child{/*(0,0,4,0)*/
+.user-about-container .ugb-container .ugb-container__content-wrapper > :last-child, 
+.restaurant-about-kiwe .ugb-container .ugb-container__content-wrapper > :last-child{/*(0,0,4,0)*//*(0,0,4,0)*/
     margin-bottom: 0 !important;
 }
 
