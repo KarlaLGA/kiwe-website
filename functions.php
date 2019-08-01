@@ -47,8 +47,7 @@ if ( ! function_exists( 'kiwe_setup' ) ) :
 			'menu-main' => esc_html__( 'Primary', 'kiwe' ),
 			'menu-main-r' => esc_html__( 'Primary-Rest', 'kiwe' ),
 			'menu-subheader' => esc_html__( 'Subheader', 'kiwe' ),
-			// 'menu-user' => esc_html__( 'User Side', 'kiwe' ),
-			// 'menu-restaurant' => esc_html__( 'Restaurant Side', 'kiwe' ),
+			'menu-dashboard' => esc_html__( 'Dashboard', 'kiwe' ),
 			'menu-footer' => esc_html__( 'Footer', 'kiwe' ),
 			'menu-social' => esc_html__( 'Social Menu', 'kiwe' ),
 
@@ -144,11 +143,11 @@ function kiwe_scripts() {
 
 	wp_enqueue_script( 'kiwe-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20190729', true );
 
-	if(is_page('about'))
-	{
+	// if(is_page('about'))
+	// {
 	//Parallax Effect
 	wp_enqueue_script( 'kiwe-parallax', get_template_directory_uri() . '/js/parallax-effect.js', array('jquery'), '20190729', true );
-	}
+	// }
 
 	if(is_front_page())
 	{
