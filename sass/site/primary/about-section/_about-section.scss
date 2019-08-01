@@ -10,6 +10,7 @@
     color: white;
 
     font-family: 'Lobster', serif;
+    font-weight: normal;
     font-size: 2rem;
     letter-spacing: 1px;
     line-height: 1;
@@ -27,6 +28,7 @@
     color: white;
 
     font-family: 'Lobster', serif;
+    font-weight: normal;
     font-size: 2rem;
     letter-spacing: 1px;
     line-height: 1;
@@ -73,7 +75,7 @@
     }
 }
 
-    @media screen and (min-width: 700px){
+    @media screen and (min-width: 800px){
         .ugb-container__wrapper{/*(0,0,1,0)*/
             .ugb-container__content-wrapper{/*(0,0,1,0)*/
                 display: grid;
@@ -100,7 +102,7 @@
     }
 }
     
-    @media screen and (min-width: 700px){
+    @media screen and (min-width: 800px){
         .ugb-container__wrapper{/*(0,0,1,0)*/
             .ugb-container__content-wrapper{/*(0,0,1,0)*/
                 display: grid;
@@ -112,7 +114,7 @@
     }
 }
 
-@media screen and (min-width: 700px){
+@media screen and (min-width: 800px){
 .restaurant-about-kiwe .ugb-container__wrapper .ugb-container__content-wrapper,
 .restaurant-how-kiwe .ugb-container__wrapper .ugb-container__content-wrapper
 {/*(0,0,3,0)*/
@@ -138,10 +140,9 @@
 
 .about-kiwe.restaurant-about-kiwe.section, .about-kiwe.user-about-kiwe.section{/*(0,0,3,0)*//*(0,0,3,0)*/
     margin-bottom: 1rem !important;
-    @media screen and (min-width: 700px){
+    @media screen and (min-width: 800px){
         margin-bottom: 0rem !important;
     }
-
 }
 
 
@@ -186,33 +187,23 @@
 
     ul{/*(0,0,0,1)*/
         margin: 1rem 1% 1rem 1%;
-        list-style-image: url('asset/kiwi-bullet.png');
+        //list-style-image: url('asset/kiwi-bullet.png');
         list-style-type: none;
         list-style-position: outside;
-        padding-left: 20px;
+        padding-left: 0px;
 
-        @media screen and (min-width: 700px){
-            padding-left: 20px;
+        @media screen and (min-width: 800px){
+            //padding-left: 20px;
         }
 
         li{/*(0,0,0,1)*/
-            line-height: 1.5;
+            line-height: 1.15;
             margin: 0.5rem auto;
-        }
-
-        /*li::before{
-            content: "";
-            display: block;
-            background: url("asset/kiwi-bullet.png") no-repeat;
-            width: 20px;
-            height: 20px;
-            float: left;
-            margin: 0 6px 0 0;
-            
-
-        }*/
-   
-        
+            background-image: url('asset/kiwi-bullet.png');
+            background-repeat: no-repeat;
+            background-position: left center; 
+            padding-left: 25px;
+        }        
     }
 }
 
@@ -295,10 +286,36 @@
 
 }
 
-.menu-item .middle-menu-active:link{
+.menu-item .middle-menu-active:link{/*(0,0,3,0)*/
     color: #fff;
 }
 
 
+///////////////////////////////////////////////
+
+
+.about-kiwe .about-image-desktop{/*(0,0,2,0)*/
+    display: none;
+    margin-bottom: 0 !important;
+    @media screen and (min-width: 800px){
+    display: block;
+    max-width: 200px !important;
+    margin-left: auto;
+    margin-right: auto;
+    }
+}
+
+.user-about-container .ugb-container .ugb-container__content-wrapper > :last-child{/*(0,0,4,0)*/
+    margin-bottom: 0 !important;
+}
+
+.about-kiwe .about-image-mobile{/*(0,0,2,0)*/
+
+    margin-bottom: 0 !important;
+
+    @media screen and (min-width: 800px){
+        display: none;
+    }
+}
 
 
