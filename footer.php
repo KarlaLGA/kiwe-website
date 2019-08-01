@@ -62,8 +62,9 @@
 			<span class="sep"> | </span>
 				<?php
 				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'kiwe' ), 'kiwe', '<a href="http://kiwe.wmdd.ca/about/">Mixed Bag</a>' );
+				//printf( esc_html__( 'Theme: %1$s by %2$s.', 'kiwe' ), 'kiwe', '' );
 				?>
+				Theme: kiwe By <a href="<?php echo get_page_link(8); ?>">Mixed Bag</a>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
