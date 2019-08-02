@@ -45,7 +45,9 @@
 
         p, 
         .nf-form-fields-required { /* (0, 0, 1, 1) */
-            display: none;
+            display: block;
+            text-align: center;
+            margin-bottom: 2rem;
         }
 
         .nf-field-label { /* (0, 0, 1, 0) */
@@ -105,7 +107,6 @@
             img {
                 margin-bottom: 10%;
             }
-
         }
     }
 
