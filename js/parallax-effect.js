@@ -1,10 +1,11 @@
-$( window ).scroll(function() {
+$( window ).scroll(function(){
 
-    let wScroll = $(this).scrollTop();
-   
+let wScroll = $(this).scrollTop()
+
+
 $('.custom-logo').css({
     'transform' : 'rotate('+wScroll+'deg)'
 })
 
-
 });
+   
