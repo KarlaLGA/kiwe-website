@@ -65,6 +65,7 @@
 				//printf( esc_html__( 'Theme: %1$s by %2$s.', 'kiwe' ), 'kiwe', '' );
 				?>
 				Theme: kiwe By <a href="<?php echo get_page_link(8); ?>">Mixed Bag</a>
+				<p class="copyright">© 2019 Kiwe All Rights Reserved</p>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
