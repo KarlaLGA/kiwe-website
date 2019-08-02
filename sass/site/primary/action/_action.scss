@@ -52,7 +52,14 @@
     padding-top: 0 !important;
     padding-left: 0 !important;
     margin-top: 3rem !important;
+}
 
+.download-footer,
+.demo-footer { //(0,0,1,0)
+    padding-right: 0;
+    padding-top: 0 !important;
+    padding-left: 0 !important;
+    margin-bottom: 3rem !important;   
 }
 
 .download-header .ugb-container__content-wrapper,
@@ -552,6 +559,13 @@
             }
 
         }
+    }
+}
+
+@media screen and (min-width:1120px) {
+    .demo-header {
+        padding-bottom: 3% !important;
+        transition: all 0.2s;
     }
 }
 
