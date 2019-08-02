@@ -199,7 +199,6 @@
     .ugb-container__content-wrapper { //(0,0,1,0)
         margin-top: 10% !important;
         margin-bottom: 7vh !important;
-
     }
     
     .download-buttons-container,
@@ -252,11 +251,6 @@
 
 
 // ==================================================== RESTAURANT PAGE
-
-.demo-buttons-container { //(0,0,1,0)
-    .wp-block-button__link { //(0,0,1,0)
-    }
-}
 
 .demo-button,
 .button-learn { //(0,0,1,0)
@@ -464,8 +458,7 @@
     }
 
     .img-background-footer { //(0,0,1,0)
-
-            margin-bottom: 3rem !important;
+        margin-bottom: 3rem !important;
     }
 
     .download-button,
@@ -486,7 +479,6 @@
         .ugb-container__content-wrapper { //(0,0,1,0)
             margin-top: 10% !important;
             margin-bottom: 0 !important;
-    
         }
     } 
     
@@ -501,10 +493,10 @@
         padding: 3vh 0 !important;
     }
 
-
     //mobile & desktop icon - footer
     .demo-footer .img-desktop-icon{ //(0,0,2,0)
         margin-right: 5vw;
+
         img{ //(0,0,0,1)
             margin-top: 7vh;
         }
@@ -512,7 +504,6 @@
 
     .download-footer .ugb-container__content-wrapper { //(0,0,2,0)
         justify-content: space-between;
-
     }
 
    .demo-footer .ugb-container__content-wrapper { //(0,0,2,0)
@@ -528,7 +519,6 @@
             justify-content: space-between;
             align-items: center;
             margin-top: 0 !important;
-
         }
     }
 

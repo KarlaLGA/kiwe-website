@@ -10,8 +10,6 @@
     border-radius: 20px;
     padding-top: 4rem;
     padding-bottom: 4rem;
-    
-
 
     .site-contact { /* (0, 0, 1, 0) */
         margin: 0;
@@ -55,6 +53,10 @@
             font-family: $sc-font-family;
         }
 
+        .submit-wrap {
+            text-align: center;
+        }
+
         .nf-field-element {/* (0, 0, 1, 0) */ 
 
             input,
@@ -71,18 +73,40 @@
                 font-weight: $bt-font-weight;
                 text-align: center;
                 padding: 0.5rem 10% !important;
-                margin: auto 35%;
-                width: 30%;
+                margin: auto;
+                width: 180px;
             }
         }
 
         .contact-us-image { /* (0, 0, 1, 0) */
-            display: none;
+            display: block;
         }
 
         .entry-footer { /* (0, 0, 1, 0) */
             display: none;
         }   
+    }
+
+    @media screen and (min-width:801px) {
+        .contact-us .ugb-container__content-wrapper {
+            display: grid;
+            grid-template-columns: 69% 29%;
+            grid-gap: 2%;
+
+            .contact-us-form .ugb-container__content-wrapper {
+                display: block;
+            }
+        }
+
+        .site-contact .contact-us-image {
+            display: flex;
+            align-items: flex-start;                
+
+            img {
+                margin-bottom: 10%;
+            }
+
+        }
     }
 
 }
