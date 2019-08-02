@@ -1,8 +1,8 @@
-#wp-vue-app{
+#wp-vue-app{    //(0,1,0,0)
     width: 100%;
     height: 100vh;
 
-    iframe{
+    iframe{ //(0,0,0,1)
         display: block;       /* iframes are inline by default */
         background: transparent;
         border: none;         /* Reset default border */
@@ -11,10 +11,437 @@
     }
 }
 
-.page-id-62 .site-main{
-    //  max-width: 100vw;
+#menu-dashboard{    //(0,1,0,0)
+    justify-content: flex-end;
 }
 
-#menu-dashboard{
-    justify-content: flex-end;
+#dashboard-section{ //(0,1,0,0)
+
+/*=============================================
+=            General Style            =
+=============================================*/
+body{ //(0,0,0,1)
+    margin: 0;
+  }
+  
+  #app {  //(0,1,0,0)
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+    overflow-x: hidden;
+  }
+  #nav {   //(0,1,0,0)
+    padding: 10px 0 0;
+    a {  //(0,0,0,1)
+      font-weight: bold;
+      color: #2c3e50;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      &.router-link-exact-active {   //(0,0,1,0)
+        color: #42b983;
+      }
+    }
+  }
+  
+  
+    .btn {   //(0,0,1,0)
+      background-color: $bt-background-color;
+      display: block;
+      color: white;
+      width: 200px;
+      padding: 10px 0;
+      outline: none;
+      border: none;
+  
+      cursor: pointer;
+    }
+  
+    .btn-text {  //(0,0,1,0)
+      text-align: center;
+      font-size: 1rem;
+      margin: 1rem auto;
+      border-radius: $bt-border-radius;
+      font-weight: $bt-font-weight;
+      font-family: $bt-font-family;
+      text-transform: capitalize;
+    }
+  
+    .red-text{   //(0,0,1,0)
+      color: red;
+    }
+  
+  
+  
+  /*=====  End of General Style  ======*/
+  
+  
+  
+  
+  /*=============================================
+  =            Home Component            =
+  =============================================*/
+  
+  .home-section{ //(0,0,1,0)
+    background-color: #664B1E;
+  
+  }
+  .title{ //(0,0,1,0)
+    font-size: 3rem;
+  
+  }
+  
+  
+  .no-lineup-panel{ //(0,0,1,0)
+    text-align: center;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 8px 0;
+  }
+  
+  
+  /*----------  WaitList  ----------*/
+  
+      .waitlist-section{  //(0,0,1,0)
+        background-color: #fff;
+        border-radius: 20px;
+        
+      }
+  
+      .group-title{ //(0,0,1,0)
+      color: $main-green;
+      font-family: "Source Serif Pro", sans-serif;
+      font-size: 1.2rem;
+      margin-top: 0;
+      padding-bottom: 15px;
+      font-weight: bold;
+      text-transform: uppercase;
+      }
+  
+      .waitlist-container{  //(0,0,1,0)
+        padding-top: 10px;
+        display: grid;
+        grid-template-columns: 1fr 5px 1fr 5px 1fr;
+        grid-gap: 10px;
+        min-height: 500px;
+  
+        @media screen and (max-width: 700px) {
+          grid-template-columns: 1fr;
+        }
+  
+      }
+  
+      .divider{ //(0,0,1,0)
+      background-color: $main-green;
+      margin: 20px 0;
+      border-radius: 20px;
+      }
+  
+      .single-list{ //(0,0,1,0)
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin-left: 0;
+        padding-left: 0;
+        align-items: center;
+  
+        .card{  //(0,0,1,0)
+          border: 4px solid $main-green;
+          border-radius: 10px;
+          
+          height: 180px;
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          margin-bottom: 15px;
+          @media screen and (max-width: 700px) {
+          width: 60vw;
+          }
+        }
+  
+        .card-title,
+        .join-time,
+        .wait-time{ //(0,0,1,0)
+          display: flex;
+          justify-content: space-between;
+          padding: 0 8px;
+          margin: 0;
+          font-weight: bold;
+        }
+        .card-content{  //(0,0,1,0)
+          width: 100%;
+        }
+  
+        .addition-container p{  //(0,0,1,1)
+          color: $accent;
+          margin: 0;
+          font-weight: bold;
+        }
+  
+        .card-action{ //(0,0,1,0)
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-end;
+          margin-bottom: 8px;
+          padding: 0 8px;
+          .btn{ //(0,0,1,0)
+            width: 40px;
+            height:40px;
+            background-color: $main-green;
+            outline: none;
+            border: none;
+            img{  //(0,0,0,1)
+              display: block;
+              width: 20px;
+              margin: 0 auto;
+            }
+            
+          }
+        }
+      }
+      .text-orange{ //(0,0,1,0)
+        color: $accent;
+        
+      }
+  
+  
+  /*=====  End of Home Component  ======*/
+  
+  
+  /*=============================================
+  =            Settings Component            =
+  =============================================*/
+  
+    .options-container{ //(0,0,1,0)
+    // background-color: #fff;
+    border-radius: 20px;
+    padding-bottom: 8px;
+  }
+  
+    .card-panel{  //(0,0,1,0)
+      margin-top: 8px;
+      display:flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      h4{ //(0,0,0,1)
+      font-size: 1.2rem;
+      margin: 0 auto;
+      font-weight: bold;
+      color: black;
+      line-height: 1;
+      padding-top: 15px;
+      width: 100%;
+      margin-bottom: 20px;
+      }
+      
+  
+      
+    }
+  
+    .input-field{ //(0,0,1,0)
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+  
+        input{  //(0,0,0,1)
+          border: 3px solid $accent;
+          padding: 10px;
+          border-radius: 5px;
+        }
+  
+        @media screen and(max-width: 500px) {
+          width: 100%;
+        }
+    }
+  
+    
+    /*----------  Lineup Switch Component  ----------*/
+    
+      .lineup-control{  //(0,0,1,0)
+        // background-color: #fff;
+        border-radius: 20px;
+        margin-bottom: 20px;
+        padding: 8px 0;
+        h5{ //(0,0,0,1)
+          color: $main-green;
+          font-family: "Source Serif Pro", sans-serif;
+          font-size: 1.2rem;
+          margin: 0;
+          padding-bottom: 15px;
+          font-weight: bold;
+          text-transform: uppercase;
+        }
+    }
+  
+  /*=====  End of Settings Component  ======*/
+  
+  
+  /*=============================================
+  =            Signin Component            =
+  =============================================*/
+  
+      .logo{ //(0,0,1,0)
+        width: 120px;
+        height: auto;
+        display: block;
+        margin:  0 auto;
+        margin-top: 30px;
+      }
+  
+      .logo-title{  //(0,0,1,0)
+      text-align: center;
+      font-family: Lobster, sans-serif;
+      margin-top: 1vh;
+      color: $main-green;
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+      }
+  
+      .container-title {  //(0,0,1,0)
+      color: $main-green;
+      text-transform: uppercase;
+      font-size: 2rem;
+      font-family: "Source Serif Pro";
+      font-weight: bold;
+      margin-top: 10px;
+      }
+  
+      .login-form{  //(0,0,1,0)
+          label { //(0,0,0,1)
+          font-family: "Source Serif Pro", "Times New Roman", serif;
+          font-size: 1.25rem;
+          color: black;
+          font-weight: bold;
+          display: block;
+            }
+  
+          input{  //(0,0,0,1)
+                background-color: #ebf1c8 !important;
+                font-family: "Open Sans", Arial, sans-serif;
+                font-size: 1rem;
+                border-radius: 7px !important;
+                border-bottom: none !important;
+                padding-left: 1rem !important;
+                margin-bottom: 2.5vh !important;
+                box-shadow: none;
+                border: none;
+                outline: none;
+                height: 3rem;
+                width: 300px;
+          }
+      }
+  
+  
+  /*=====  End of Signin Component  ======*/
+  
+  
+  
+  
+  
+  /*=============================================
+  =            Header Component            =
+  =============================================*/
+    .header{  //(0,0,1,0)
+        background-color: #664B1E;
+    }
+  
+    .title-container{ //(0,0,1,0)
+        background-color: white;
+        border-radius: 20px;
+        margin-bottom: 20px;
+        .restaurant-name{ //(0,0,1,0)
+              font-size: 2rem;
+              margin: 0 auto;
+              font-family: "Source Serif Pro", sans-serif;
+              font-weight: bold;
+              color: black;
+              line-height: 1;
+              padding-top: 15px;
+        }
+        h2{   //(0,0,0,1)
+            color: $main-green;
+            font-family: "Source Serif Pro", sans-serif;
+            font-size: 1.2rem;
+            margin-top: 0;
+            padding-bottom: 15px;
+            position: relative;
+            transform: translateX(50px);
+  
+        }
+    }
+  
+    
+    /*----------  Header Menu  ----------*/
+     .header-logo{ //(0,0,1,0)
+        width: 50px;
+        height: 50px;
+        display: block;
+        margin: 0 auto;
+        padding: 10px;
+    }
+  
+  
+  .menu-item{ //(0,0,1,0)
+      margin-bottom: 0;
+      text-decoration: none;
+      p{  //(0,0,0,1)
+          margin: 0;
+          color: white;
+      }
+  
+  }
+  
+  
+  #nav {  //(0,1,0,0)
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+  }
+  
+  
+  .menu-item{ //(0,0,1,0)
+      padding: 0 10px;
+  
+      .menu-icon{ //(0,0,1,0)
+          width: 40px;
+          margin: 0 auto;
+      }
+  
+      .icon-normal{   //(0,0,1,0)
+          display: block;
+      }
+      .icon-active{   //(0,0,1,0)
+          display: none;
+      }
+  }
+  
+  .menu-item svg path {   //(0,0,1,2)
+     color: white !important;
+      fill: white;
+      transform: scale(.7);
+      transform-origin: center;
+  }
+  
+  
+  .router-link-active{    //(0,0,1,0)
+      p{  //(0,0,0,1)
+          color: orange;
+      }
+      .icon-normal{   //(0,0,1,0)
+          display: none;
+      }
+      .icon-active{   //(0,0,1,0)
+          display: block;
+      }
+  }
+    
+  
+  
+  /*=====  End of Header Component  ======*/
+  
+  
 }
