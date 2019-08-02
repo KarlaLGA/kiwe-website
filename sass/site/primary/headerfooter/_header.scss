@@ -62,6 +62,11 @@
         color:$main-green;
         font-family: Lobster, serif;
         padding-right: 10px;
+        letter-spacing: -2px;
+
+        @media screen and (min-width:761px) {
+            letter-spacing: -3px;
+        }
     }
 }
 
