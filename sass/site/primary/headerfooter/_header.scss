@@ -44,9 +44,18 @@
             margin: 0.5rem 0;
 
             a { // (0, 0, 0, 1)
-            color: black !important;
-
+            color: white !important;
+            width: 100%;
             }
+
+        }
+
+        li:nth-child(4):hover{
+            background-color: $accent;
+            a { // (0, 0, 0, 1)
+                color: $brown !important;
+                width: 100%;
+                }
         }
 
     }
