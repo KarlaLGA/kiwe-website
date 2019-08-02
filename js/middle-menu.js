@@ -1,3 +1,6 @@
+// =============================================
+// THIS CSS STYLING WAS MADE BY JUAN TIRADO
+// =============================================
 
 $( window ).scroll(function() {
 let section1ToTopUser =  $('.user-about-container').offset().top; 
