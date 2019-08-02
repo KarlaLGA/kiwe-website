@@ -71,7 +71,17 @@
 			) );
 			?>
 		</nav><!-- #site-navigation -->
-
+		
+		<?php elseif (is_page('restaurant-dashboard') ) :  ?>
+		<nav id="site-navigation" class="main-navigation">
+			<button class=" menu-toggle" aria-controls="primary-menu" aria-expanded="false"></button> 
+			<?php
+			wp_nav_menu( array(
+				'theme_location' => 'menu-dashboard',
+				'menu_id'        => 'menu-dashboard',
+			) );
+			?>
+		</nav><!-- #site-navigation -->
 		<?php else : ?>
 
 		<nav id="site-navigation" class="main-navigation">

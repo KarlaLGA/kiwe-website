@@ -19,13 +19,7 @@ get_header();
 		<main id="main" class="site-main">
 
 		<div id="wp-vue-app">           
-             <!-- <iframe src=" -->
-                <?php
-                    // echo get_template_directory_uri() . '/restaurant-side/index.html';
-                ?>
-                
-                <!-- " frameborder="0"></iframe>  -->
-				<iframe src="http://restaurant.kiwe.wmdd.ca" frameborder="0"></iframe>
+			<iframe src="http://restaurant.kiwe.wmdd.ca" frameborder="0"></iframe>
         </div><!-- #vue-app -->
 
 		</main><!-- #main -->

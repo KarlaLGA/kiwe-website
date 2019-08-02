@@ -1,6 +1,6 @@
-// $( window ).scroll(function() {
+$( window ).scroll(function() {
 
-//     let wScroll = $(this).scrollTop();
+    let wScroll = $(this).scrollTop();
 //     // console.log(wScroll);
 //     if($( window ).width()>760&&$(window).width<1000)
 //     {
@@ -26,7 +26,13 @@
 //         })
 //     }
    
+$('.custom-logo').css({
+    'transform' : 'rotate('+wScroll+'deg)'
+})
+
+$('.slogan-kiwe img').css({
+    'transform' : ' translateX('+ (wScroll-100) /2.5 +'%) rotate('+wScroll+'deg)'
+})
 
 
-
-// });
+});
