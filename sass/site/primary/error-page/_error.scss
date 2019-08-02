@@ -1,0 +1,52 @@
+/*
+ * @Author: Sunny Xue 
+ * @Date: 2019-08-01 20:32:47
+ * @Last Modified by: Sunny Xue
+ * @Last Modified time: 2019-08-01 22:03:00
+ */
+
+.error404{
+    .page-title{
+        font-family: "Source Serif Pro";
+        font-weight: bold;
+        font-size: 2.5rem;
+        color: #f5a61d;
+        text-align: center;
+        margin:0;
+    }
+    .page-content{
+        margin-top: 0;
+    }
+    .error-kiwe{
+        max-width: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .nav-info{
+        h2{
+            text-align: center;
+            font-size: 1.4rem;
+            margin: 0;
+        }
+    }
+    .btn-container{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
+    .btn-link{
+        &:first-of-type{
+        background-color: $main-green;
+        }
+        background-color: #664b1e;
+        border-radius: 4.5px;
+        width: 220px;
+        padding: 10px;
+        color: white;
+        text-align: center;
+        margin: 8px;
+
+    }
+}

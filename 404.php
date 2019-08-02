@@ -15,41 +15,31 @@ get_header();
 
 			<section class="error-404 not-found">
 				<header class="page-header">
-					<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'kiwe' ); ?></h1>
+					<h1 class="page-title">Are you lost?</h1>
 				</header><!-- .page-header -->
 
 				<div class="page-content">
-					<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'kiwe' ); ?></p>
 
 					<?php
-					get_search_form();
-
-					the_widget( 'WP_Widget_Recent_Posts' );
+					$img= wp_get_attachment_image_src(410, 'medium'); 
+					
+					if($img)
+					{
+						?>
+						<div class="error-container">
+							<img class="error-kiwe" src="<?php echo $img[0] ?>" alt="error-kiwe">
+						</div>
+						<?php
+					}
 					?>
-
-					<div class="widget widget_categories">
-						<h2 class="widget-title"><?php esc_html_e( 'Most Used Categories', 'kiwe' ); ?></h2>
-						<ul>
-							<?php
-							wp_list_categories( array(
-								'orderby'    => 'count',
-								'order'      => 'DESC',
-								'show_count' => 1,
-								'title_li'   => '',
-								'number'     => 10,
-							) );
-							?>
-						</ul>
-					</div><!-- .widget -->
-
-					<?php
-					/* translators: %1$s: smiley */
-					$kiwe_archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives. %1$s', 'kiwe' ), convert_smilies( ':)' ) ) . '</p>';
-					the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$kiwe_archive_content" );
-
-					the_widget( 'WP_Widget_Tag_Cloud' );
-					?>
-
+					<div class="nav-info">
+					<h2 >Let us help you find your way</h2>
+					<div class="btn-container">
+						<a class="btn-link" href="<?php echo get_page_link(2); ?>">I am a customer</a>
+						<a class="btn-link" href="<?php echo get_page_link(18); ?>">I am a restaurant owner</a>
+					</div>
+					</div>
+			
 				</div><!-- .page-content -->
 			</section><!-- .error-404 -->
 
