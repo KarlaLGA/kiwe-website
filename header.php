@@ -33,7 +33,6 @@
 		<div class="header-primary">
 		<div class="site-branding">
 
-
 			<?php
 			if ( is_front_page() && is_home() ) :
 				?>
