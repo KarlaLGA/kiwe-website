@@ -136,18 +136,13 @@ function kiwe_scripts() {
 
 	wp_enqueue_script( 'kiwe-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20190729', true );
 
-	wp_enqueue_script( 'kiwe-text-circle', get_template_directory_uri() . '/js/text-circle.js', array(), '20190729', true );
-
 	wp_enqueue_script( 'kiwe-circletype', get_template_directory_uri() . '/js/circletype.min.js', array(), '20190729', true );
-
 
 	wp_enqueue_script( 'kiwe-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20190729', true );
 
-	// if(is_page('about'))
-	// {
 	//Parallax Effect
 	wp_enqueue_script( 'kiwe-parallax', get_template_directory_uri() . '/js/parallax-effect.js', array('jquery'), '20190729', true );
-	// }
+	
 
 	if(is_front_page())
 	{
