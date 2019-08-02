@@ -13,7 +13,7 @@ let section3ToBottomUser =  section3ToTopUser + $('.faq').outerHeight();
     // console.log(wScroll);
 
     if(wScroll>=section1ToTopUser && wScroll < section1ToBottomUser){
-        console.log("Yeah")
+      
 
         $("#menu-item-141 a").addClass('middle-menu-active');
     }
@@ -23,7 +23,7 @@ let section3ToBottomUser =  section3ToTopUser + $('.faq').outerHeight();
 
     
     if(wScroll>=section2ToTopUser && wScroll < section2ToBottomUser){
-        console.log("Yeah2")
+       
 
         $("#menu-item-143 a").addClass('middle-menu-active');
     }
@@ -32,7 +32,7 @@ let section3ToBottomUser =  section3ToTopUser + $('.faq').outerHeight();
     }
 
     if(wScroll>=section2ToTopUser && wScroll < section2ToBottomUser){
-        console.log("Yeah2")
+       
 
         $("#menu-item-145 a").addClass('middle-menu-active');
     }
@@ -41,7 +41,7 @@ let section3ToBottomUser =  section3ToTopUser + $('.faq').outerHeight();
     }
 
     if(wScroll>=section3ToTopUser && wScroll < section3ToBottomUser){
-        console.log("Yeah3")
+       
 
         $("#menu-item-147 a").addClass('middle-menu-active');
     }
